@@ -108,7 +108,7 @@ dependencies {
     implementation(files("libs/appmap-1.1.0.jar"))
 
     // source code analysis
-    implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.2")
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.2")
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:${property("detekt.version")}")
 }
 
