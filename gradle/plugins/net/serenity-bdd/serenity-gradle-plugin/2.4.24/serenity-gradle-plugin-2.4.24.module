@@ -3,15 +3,15 @@
   "component": {
     "group": "net.serenity-bdd",
     "module": "serenity-gradle-plugin",
-    "version": "2.4.24-SNAPSHOT",
+    "version": "2.4.24",
     "attributes": {
-      "org.gradle.status": "integration"
+      "org.gradle.status": "release"
     }
   },
   "createdBy": {
     "gradle": {
       "version": "6.8.3",
-      "buildId": "76teugnucvbyfhkuqveaip7wti"
+      "buildId": "3c4beefrkfa7fllliqf2kqck3q"
     }
   },
   "variants": [
@@ -49,13 +49,13 @@
       ],
       "files": [
         {
-          "name": "serenity-gradle-plugin-2.4.24-SNAPSHOT.jar",
-          "url": "serenity-gradle-plugin-2.4.24-SNAPSHOT.jar",
-          "size": 34332,
-          "sha512": "639927edb50c7e3372fb65d81c4767e65ee13d3cdfc77435120f685fafbabdad8964906748876d955185a680127799b664f65db3cff28224a8fe74acddcc6ee6",
-          "sha256": "b03480c867130d18cc6fb7c412963f6abc4f713987f9f747bde06ff3d9d12e14",
-          "sha1": "3b48dc375f3464c22974af898d9438e41f67329f",
-          "md5": "eae0d8c6f6327d5ea94057007685b951"
+          "name": "serenity-gradle-plugin-2.4.24.jar",
+          "url": "serenity-gradle-plugin-2.4.24.jar",
+          "size": 34323,
+          "sha512": "6425ad23ac6b5b8289d3571d254c4e2acdb3347d3dff118959c88852af5d1c2c3ad3de9100178e474ec4f2645573d72b35ef0538f29fb588da5d67555dfe5af0",
+          "sha256": "cc4a847277d9af4cf600d357e50bb24744260461f67639e50c52c19fb4c7b9e0",
+          "sha1": "4692d856f551ea92c47cdfb354d42d9ff71458f7",
+          "md5": "d9e0f3eb7c17b711a4e51f925ef30581"
         }
       ]
     },
@@ -93,13 +93,13 @@
       ],
       "files": [
         {
-          "name": "serenity-gradle-plugin-2.4.24-SNAPSHOT.jar",
-          "url": "serenity-gradle-plugin-2.4.24-SNAPSHOT.jar",
-          "size": 34332,
-          "sha512": "639927edb50c7e3372fb65d81c4767e65ee13d3cdfc77435120f685fafbabdad8964906748876d955185a680127799b664f65db3cff28224a8fe74acddcc6ee6",
-          "sha256": "b03480c867130d18cc6fb7c412963f6abc4f713987f9f747bde06ff3d9d12e14",
-          "sha1": "3b48dc375f3464c22974af898d9438e41f67329f",
-          "md5": "eae0d8c6f6327d5ea94057007685b951"
+          "name": "serenity-gradle-plugin-2.4.24.jar",
+          "url": "serenity-gradle-plugin-2.4.24.jar",
+          "size": 34323,
+          "sha512": "6425ad23ac6b5b8289d3571d254c4e2acdb3347d3dff118959c88852af5d1c2c3ad3de9100178e474ec4f2645573d72b35ef0538f29fb588da5d67555dfe5af0",
+          "sha256": "cc4a847277d9af4cf600d357e50bb24744260461f67639e50c52c19fb4c7b9e0",
+          "sha1": "4692d856f551ea92c47cdfb354d42d9ff71458f7",
+          "md5": "d9e0f3eb7c17b711a4e51f925ef30581"
         }
       ]
     }

@@ -9,9 +9,9 @@ plugins {
     id("com.appland.appmap").version("1.0.1")
 
     // waiting for https://github.com/serenity-bdd/serenity-gradle-plugin/pull/4
-    id("net.serenity-bdd.gradle").version("2.4.24-SNAPSHOT")
+    id("net.serenity-bdd.gradle").version("2.4.24")
     // waiting for https://github.com/allure-framework/allure-gradle/pull/61
-    id("io.qameta.allure").version("2.9-SNAPSHOT")
+    id("io.qameta.allure").version("2.9")
 }
 
 repositories {

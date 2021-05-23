@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.serenity-bdd</groupId>
   <artifactId>serenity-gradle-plugin</artifactId>
-  <version>2.4.24-SNAPSHOT</version>
+  <version>2.4.24</version>
   <dependencies>
     <dependency>
       <groupId>net.serenity-bdd</groupId>
