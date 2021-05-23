@@ -1,5 +1,7 @@
 # arch-blueprint-kotlin
 
+[![Build Status](https://travis-ci.com/vondacho/arch-blueprint-kotlin.svg?branch=master)](https://travis-ci.com/vondacho/arch-blueprint-kotlin)
+
 A Kotlin project as template and pedagogical support for the teaching of Clean Architecture crafting practice.
 
 ## Features
