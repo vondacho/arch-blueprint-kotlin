@@ -11,7 +11,7 @@
   "createdBy": {
     "gradle": {
       "version": "6.8.3",
-      "buildId": "3c4beefrkfa7fllliqf2kqck3q"
+      "buildId": "uhdxqbiz4jc5bldx5zm22fqwsq"
     }
   },
   "variants": [
@@ -51,11 +51,11 @@
         {
           "name": "serenity-gradle-plugin-2.4.24.jar",
           "url": "serenity-gradle-plugin-2.4.24.jar",
-          "size": 34323,
-          "sha512": "6425ad23ac6b5b8289d3571d254c4e2acdb3347d3dff118959c88852af5d1c2c3ad3de9100178e474ec4f2645573d72b35ef0538f29fb588da5d67555dfe5af0",
-          "sha256": "cc4a847277d9af4cf600d357e50bb24744260461f67639e50c52c19fb4c7b9e0",
-          "sha1": "4692d856f551ea92c47cdfb354d42d9ff71458f7",
-          "md5": "d9e0f3eb7c17b711a4e51f925ef30581"
+          "size": 34309,
+          "sha512": "b0f32f829250a6f5b175451f8c74dc19b84ccadcde5f35b6431480f8fb930e6be84bafe9a08e49a34fcaeccd4bebea1b359e741abbe4c86d75b04b3263b2f0d3",
+          "sha256": "702d9df85a3425a2a2490291f59ab10747795469ee1abbd9d582ec52bde440da",
+          "sha1": "8dc2ef386b3e9a2d6a7d497f42dc93994b16f833",
+          "md5": "c443fb3b8c135a8626383ccd8dec1fbf"
         }
       ]
     },
@@ -95,11 +95,11 @@
         {
           "name": "serenity-gradle-plugin-2.4.24.jar",
           "url": "serenity-gradle-plugin-2.4.24.jar",
-          "size": 34323,
-          "sha512": "6425ad23ac6b5b8289d3571d254c4e2acdb3347d3dff118959c88852af5d1c2c3ad3de9100178e474ec4f2645573d72b35ef0538f29fb588da5d67555dfe5af0",
-          "sha256": "cc4a847277d9af4cf600d357e50bb24744260461f67639e50c52c19fb4c7b9e0",
-          "sha1": "4692d856f551ea92c47cdfb354d42d9ff71458f7",
-          "md5": "d9e0f3eb7c17b711a4e51f925ef30581"
+          "size": 34309,
+          "sha512": "b0f32f829250a6f5b175451f8c74dc19b84ccadcde5f35b6431480f8fb930e6be84bafe9a08e49a34fcaeccd4bebea1b359e741abbe4c86d75b04b3263b2f0d3",
+          "sha256": "702d9df85a3425a2a2490291f59ab10747795469ee1abbd9d582ec52bde440da",
+          "sha1": "8dc2ef386b3e9a2d6a7d497f42dc93994b16f833",
+          "md5": "c443fb3b8c135a8626383ccd8dec1fbf"
         }
       ]
     }
