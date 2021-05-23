@@ -1,0 +1,32 @@
+version: 2
+updates:
+
+  # Maintain dependencies for npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "npm"
+      include: "scope"
+    labels:
+      - "npm"
+      - "dependencies"
+    open-pull-requests-limit: 3
+    pull-request-branch-name:
+      separator: "-"
+
+  # Maintain dependencies for Composer
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "gradle"
+      include: "scope"
+    labels:
+      - "gradle"
+      - "dependencies"
+    open-pull-requests-limit: 3
+    pull-request-branch-name:
+      separator: "-"

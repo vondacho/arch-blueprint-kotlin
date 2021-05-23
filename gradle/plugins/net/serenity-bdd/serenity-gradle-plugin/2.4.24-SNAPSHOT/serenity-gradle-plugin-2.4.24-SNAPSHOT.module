@@ -1,0 +1,107 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.serenity-bdd",
+    "module": "serenity-gradle-plugin",
+    "version": "2.4.24-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.3",
+      "buildId": "76teugnucvbyfhkuqveaip7wti"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "net.serenity-bdd",
+          "module": "serenity-core",
+          "version": {
+            "requires": "2.4.24"
+          }
+        },
+        {
+          "group": "net.serenity-bdd",
+          "module": "serenity-model",
+          "version": {
+            "requires": "2.4.24"
+          }
+        },
+        {
+          "group": "net.serenity-bdd",
+          "module": "serenity-junit",
+          "version": {
+            "requires": "2.4.24"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "serenity-gradle-plugin-2.4.24-SNAPSHOT.jar",
+          "url": "serenity-gradle-plugin-2.4.24-SNAPSHOT.jar",
+          "size": 34332,
+          "sha512": "639927edb50c7e3372fb65d81c4767e65ee13d3cdfc77435120f685fafbabdad8964906748876d955185a680127799b664f65db3cff28224a8fe74acddcc6ee6",
+          "sha256": "b03480c867130d18cc6fb7c412963f6abc4f713987f9f747bde06ff3d9d12e14",
+          "sha1": "3b48dc375f3464c22974af898d9438e41f67329f",
+          "md5": "eae0d8c6f6327d5ea94057007685b951"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "net.serenity-bdd",
+          "module": "serenity-core",
+          "version": {
+            "requires": "2.4.24"
+          }
+        },
+        {
+          "group": "net.serenity-bdd",
+          "module": "serenity-model",
+          "version": {
+            "requires": "2.4.24"
+          }
+        },
+        {
+          "group": "net.serenity-bdd",
+          "module": "serenity-junit",
+          "version": {
+            "requires": "2.4.24"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "serenity-gradle-plugin-2.4.24-SNAPSHOT.jar",
+          "url": "serenity-gradle-plugin-2.4.24-SNAPSHOT.jar",
+          "size": 34332,
+          "sha512": "639927edb50c7e3372fb65d81c4767e65ee13d3cdfc77435120f685fafbabdad8964906748876d955185a680127799b664f65db3cff28224a8fe74acddcc6ee6",
+          "sha256": "b03480c867130d18cc6fb7c412963f6abc4f713987f9f747bde06ff3d9d12e14",
+          "sha1": "3b48dc375f3464c22974af898d9438e41f67329f",
+          "md5": "eae0d8c6f6327d5ea94057007685b951"
+        }
+      ]
+    }
+  ]
+}

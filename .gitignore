@@ -1,0 +1,8 @@
+/.idea/
+/.gradle/
+/build/
+/.husky/
+/node_modules/
+/history/
+/.allure/
+/tmp/

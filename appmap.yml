@@ -1,0 +1,10 @@
+# appmap.yml
+name: arch-blueprint-kotlin
+packages:
+  # List the packages you'd like to record here.
+  - path: edu.software.craftsmanship.blueprint.web
+  - path: edu.software.craftsmanship.blueprint.appl
+  - path: edu.software.craftsmanship.blueprint.domain
+  - path: edu.software.craftsmanship.blueprint.data
+  - path: edu.software.craftsmanship.blueprint.external
+  - path: org.springframework.data.r2dbc.repository

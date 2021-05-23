@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: blueprint-local
+  datasource:
+    hikari:
+      connection-init-sql: "SET TIME ZONE 'UTC';"
+  r2dbc:
+    url: r2dbc:postgresql://localhost:15432/
+    username: postgres
+    password: blueprint
+  flyway:
+    url: jdbc:postgresql://localhost:15432/
+    user: postgres
+    password: blueprint
+
+logging:
+  level:
+    edu.software.craftsmanship.blueprint: debug
+    org.flywaydb: info
+    org.springframework.web: info
+#    io.r2dbc.postgresql.QUERY: DEBUG # for queries
+#    io.r2dbc.postgresql.PARAM: DEBUG # for parameters
+
+validation:
+  exchange:
+    paths:
+# ignore Appmap agent dedicated metrics endpoint
+      - path-pattern: /_appmap/**
+        enable-request: false
+        enable-response: false
+# ignore Prometheus dedicated metrics endpoint
+      - path-pattern: /metrics
+        enable-request: false
+        enable-response: false
+      - path-pattern: /**
+        enable-request: true
+        enable-response: false
+        lenient-mode: false
