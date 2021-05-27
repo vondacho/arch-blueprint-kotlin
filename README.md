@@ -97,6 +97,10 @@ The Kotlin test and production codes get analysed with `Detekt`.
 - Living documentation by `Serenity-BDD` during acceptance tests execution is available at `./build/reports/tests/serenity`.
 - Report of acceptance scenario status is available at `./build/reports/tests/cucumber`; it is visible on Jenkins-CI with `cucumber-jenkins` plugin.
 
+### API
+
+- An HTML preview for the documentation of the Web API is available at `./api-doc.html`.
+
 ### Testing evidence
 
 - Report of acceptance tests execution by `Serenity-BDD` is available at `./build/reports/tests/serenity`.
