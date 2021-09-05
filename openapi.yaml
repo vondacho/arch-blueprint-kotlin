@@ -18,8 +18,8 @@ paths:
     get:
       tags:
         - client
-      summary: Searches existing clients
-      description: Given a set of matching filters
+      summary: Search clients by criteria
+      description: Searches existing clients given a set of matching filters
       operationId: searchClients
       parameters:
         - name: name
@@ -57,7 +57,7 @@ paths:
         - client
       summary: Add a new client to the store
       description: |
-        A valid response contains a generated unique ID and the creation date
+        Add a new client to the store, a valid response contains a generated unique ID and the creation date
       operationId: addClient
       requestBody:
         content:
@@ -165,7 +165,7 @@ paths:
       tags:
         - client
       summary: Deletes a client
-      description: Deletes a single client
+      description: Delete a single client
       operationId: deleteClient
       parameters:
         - name: id
@@ -235,7 +235,7 @@ paths:
       tags:
         - client
       summary: Searches over the whole hierarchy
-      description: Given a term
+      description: Searches client, organizations, users given a term
       operationId: search
       parameters:
         - name: term
