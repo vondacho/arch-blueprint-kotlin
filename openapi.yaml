@@ -127,6 +127,7 @@ paths:
       tags:
         - client
       summary: Update an existing client
+      description: Modify a single client
       operationId: updateClient
       parameters:
         - name: id
@@ -164,6 +165,7 @@ paths:
       tags:
         - client
       summary: Deletes a client
+      description: Deletes a single client
       operationId: deleteClient
       parameters:
         - name: id
@@ -196,6 +198,7 @@ paths:
       tags:
         - client
       summary: Restores a client
+      description: Restores a single client
       operationId: restoreClient
       parameters:
         - name: id
