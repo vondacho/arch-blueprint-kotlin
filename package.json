@@ -9,7 +9,7 @@
   "homepage": "https://github.com/vondacho/arch-blueprint-kotlin#readme",
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "husky": "^6.0.0"
   },
   "scripts": {
