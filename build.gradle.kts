@@ -71,7 +71,7 @@ dependencies {
 
     // test/spring
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("org.springframework.cloud:spring-cloud-starter-bootstrap:3.0.2")
+    testImplementation("org.springframework.cloud:spring-cloud-starter-bootstrap:4.0.2")
     // test/engine
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${property("junit.platform.version")}")
     testRuntimeOnly("org.junit.vintage:junit-vintage-engine:${property("junit.platform.version")}")
