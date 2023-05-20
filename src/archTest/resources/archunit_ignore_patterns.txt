@@ -1,0 +1,2 @@
+# Because Spring context configuration depends on R2dbc adapter configuration
+.*IT.*
