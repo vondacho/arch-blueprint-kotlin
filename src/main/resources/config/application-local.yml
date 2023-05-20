@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: blueprint-local
+  datasource:
+    hikari:
+      connection-init-sql: "SET TIME ZONE 'UTC';"
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/
+    username: blueprint
+    password: blueprint
+  flyway:
+    url: jdbc:postgresql://localhost:5432/
+    user: blueprint
+    password: blueprint

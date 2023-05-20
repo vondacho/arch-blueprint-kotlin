@@ -1,102 +1,139 @@
+import org.gradle.api.tasks.testing.logging.TestExceptionFormat
+import org.gradle.api.tasks.testing.logging.TestLogEvent
+import ru.vyarus.gradle.plugin.python.PythonExtension
+
 plugins {
-    kotlin("jvm").version("1.5.0")
-    kotlin("plugin.spring").version("1.5.0")
-    id("org.springframework.boot").version("2.5.0")
-    id("io.spring.dependency-management").version("1.0.11.RELEASE")
+    kotlin("jvm") version "1.8.21"
+    kotlin("plugin.spring") version "1.8.21"
+    id("org.springframework.boot") version "2.7.10"
+    id("io.spring.dependency-management") version "1.0.15.RELEASE"
+    id("org.springframework.cloud.contract") version "3.1.6"
+    id("au.com.dius.pact") version "4.5.5"
+    id("io.qameta.allure-aggregate-report") version "2.11.2"
+    id("com.appland.appmap") version "1.1.1"
+    id("org.hidetake.swagger.generator") version "2.19.2"
+    id("io.github.redgreencoding.plantuml") version "0.2.0"
+    id("ru.vyarus.mkdocs") version "3.0.0"
+    id("net.saliman.properties") version "1.5.2"
+    //id("io.gitlab.arturbosch.detekt") version "1.22.0"
+}
 
-    id("com.google.cloud.tools.jib").version("3.0.0")
-    id("io.gitlab.arturbosch.detekt").version("1.14.2")
-    id("com.appland.appmap").version("1.0.1")
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+}
 
-    // waiting for https://github.com/serenity-bdd/serenity-gradle-plugin/pull/4
-    id("net.serenity-bdd").version("2.4.24")
-    // waiting for https://github.com/allure-framework/allure-gradle/pull/61
-    id("io.qameta.allure").version("2.9")
+sourceSets {
+    create("acceptanceTest") {
+        kotlin.srcDir("src/acceptanceTest/kotlin")
+        resources.srcDir("src/acceptanceTest/resources")
+        compileClasspath += sourceSets.main.get().compileClasspath + sourceSets.test.get().compileClasspath
+        annotationProcessorPath += sourceSets.test.get().annotationProcessorPath
+    }
+    create("archTest") {
+        kotlin.srcDir("src/archTest/kotlin")
+        resources.srcDir("src/archTest/resources")
+        compileClasspath += sourceSets.main.get().compileClasspath + sourceSets.test.get().compileClasspath
+        annotationProcessorPath += sourceSets.test.get().annotationProcessorPath
+    }
+    create("c4") {
+        kotlin.srcDir("src/c4/kotlin")
+        resources.srcDir("src/c4/resources")
+        compileClasspath += sourceSets.main.get().compileClasspath
+        runtimeClasspath += sourceSets.main.get().runtimeClasspath
+        annotationProcessorPath += sourceSets.main.get().annotationProcessorPath
+    }
 }
 
 repositories {
-    mavenLocal()
     mavenCentral()
-    // Dependency: Detekt:1.14.2 -> org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.2
-    maven(url= "https://dl.bintray.com/kotlin/kotlinx/")
+    maven(url= "https://maven.pkg.jetbrains.space/public/p/kotlinx-html/maven")
 }
 
 ext {
     set("kotlin-logging.version", "1.12.5")
     set("detekt.version", "1.14.2")
-    set("cucumber.version", "6.10.3")
-    set("serenity.version", "2.4.24")
-    set("allure.version", "2.13.9")
+    set("serenity.version", "3.7.1")
     set("mockk.version", "1.11.0")
     set("springmockk.version", "3.0.1")
+    set("problem-spring-webflux.version", "0.27.0")
+    set("structurizr-kotlin.version", "1.3.0.4")
+
+    set("allure.version", "2.21.0")
+    set("liquibase.version", "4.20.0")
+    set("atlassian.validator.version", "2.33.1")
+    set("cucumber.version", "7.11.2")
+    set("spring.cloud.contract.version", "3.1.6")
+    set("embedded-database-spring-test.version", "2.2.0")
     set("junit.platform.version", "5.7.1")
-    set("embedded-postgresql.version", "2.0.8")
-    set("atlassian.validator.version", "2.18.0")
-    set("problem-spring-webflux.version", "0.26.2")
     set("structurizr.version", "1.9.4")
     set("structurizr-dsl.version", "1.10.0")
     set("structurizr-annotations.version", "1.3.5")
     set("structurizr-analysis.version", "1.3.5")
-    set("structurizr-kotlin.version", "1.2.0")
 }
 
 dependencies {
-    // kotlin
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
-    // reactor
     implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
-    // logging
     implementation("io.github.microutils:kotlin-logging:${property("kotlin-logging.version")}")
-    // spring
+
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
-    // problems
-    implementation("org.zalando:problem-spring-webflux:${property("problem-spring-webflux.version")}")
-    // serialization
+    implementation("org.zalando:problem-spring-webflux:0.27.0")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    // persistence
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
-    // database
-    implementation("org.flywaydb:flyway-core")
-    runtimeOnly("io.r2dbc:r2dbc-postgresql")
-    runtimeOnly("org.postgresql:postgresql")
-    // management
-    implementation("org.springframework.boot:spring-boot-actuator")
-    implementation("org.springframework.boot:spring-boot-actuator-autoconfigure")
-    // metrics
-    implementation("io.micrometer:micrometer-registry-prometheus")
-    // openapi
+    implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("com.atlassian.oai:swagger-request-validator-core:${property("atlassian.validator.version")}")
+    implementation("com.atlassian.oai:swagger-request-validator-springmvc:${property("atlassian.validator.version")}")
+    implementation("io.micrometer:micrometer-registry-prometheus")
 
-    // test/spring
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("org.springframework.cloud:spring-cloud-starter-bootstrap:3.0.2")
-    // test/engine
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${property("junit.platform.version")}")
-    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:${property("junit.platform.version")}")
-    // test/reactor
+    implementation("org.flywaydb:flyway-core")
+    runtimeOnly("io.r2dbc:r2dbc-postgresql:0.8.13.RELEASE")
+    implementation("org.postgresql:postgresql")
+
+    // testing
+    testImplementation("org.junit.platform:junit-platform-suite")
+    testImplementation("org.springframework.boot:spring-boot-starter-test") {
+        exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
+        exclude(group = "junit", module = "junit")
+    }
+    testImplementation("org.springframework.security:spring-security-test")
+    testImplementation("io.zonky.test:embedded-database-spring-test:${property("embedded-database-spring-test.version")}") {
+        exclude("net.java.dev.jna", "jna")
+    }
     testImplementation("io.projectreactor:reactor-test")
-    // test/mock
     testImplementation("io.mockk:mockk:${property("mockk.version")}")
     testImplementation("com.ninja-squad:springmockk:${property("springmockk.version")}")
-    // test/bdd
-    testImplementation("io.cucumber:cucumber-junit:${property("cucumber.version")}")
-    testImplementation("io.cucumber:cucumber-java:${property("cucumber.version")}")
-    testImplementation("io.cucumber:cucumber-java8:${property("cucumber.version")}")
-    testImplementation("io.cucumber:cucumber-spring:${property("cucumber.version")}")
-    // test/reporting
-    testImplementation("net.serenity-bdd:serenity-cucumber6:${property("serenity.version")}")
     testImplementation("io.qameta.allure:allure-junit5:${property("allure.version")}")
-    implementation("io.qameta.allure:allure-cucumber6-jvm:${property("allure.version")}")
-    // test/containers
-    testImplementation("com.playtika.testcontainers:embedded-postgresql:${property("embedded-postgresql.version")}")
-    // test/database
     testImplementation("org.flywaydb:flyway-core")
-    testImplementation("io.r2dbc:r2dbc-postgresql")
-    testImplementation("org.postgresql:postgresql")
+    testImplementation("io.r2dbc:r2dbc-postgresql:0.8.13.RELEASE")
 
-    // c4 structurizr
+    testRuntimeOnly("org.postgresql:postgresql")
+
+    // AT testing
+    implementation("io.cucumber:cucumber-java:${property("cucumber.version")}")
+    testImplementation("io.cucumber:cucumber-spring:${property("cucumber.version")}")
+    testImplementation("io.cucumber:cucumber-junit-platform-engine:${property("cucumber.version")}")
+    testImplementation("io.qameta.allure:allure-cucumber7-jvm:${property("allure.version")}")
+
+    // CDC testing
+    testImplementation("au.com.dius.pact.consumer:junit5:4.5.5") {
+        exclude("org.apache.groovy", "groovy")
+    }
+    testImplementation("au.com.dius.pact.provider:junit5:4.5.5") {
+        exclude("org.apache.groovy", "groovy")
+    }
+    testImplementation("org.codehaus.groovy:groovy-all:3.0.17")
+    testRuntimeOnly("io.zonky.test:embedded-postgres:2.0.4")
+
+    // ARCH testing
+    testImplementation("com.tngtech.archunit:archunit-junit5:1.0.1")
+
+    // API documentation
+    swaggerUI("org.webjars:swagger-ui:4.1.3")
+
+    // C4 documentation
     implementation("com.structurizr:structurizr-annotations:${property("structurizr-annotations.version")}")
     implementation("com.structurizr:structurizr-analysis:${property("structurizr-analysis.version")}")
     implementation("com.structurizr:structurizr-core:${property("structurizr.version")}")
@@ -104,107 +141,150 @@ dependencies {
     implementation("com.structurizr:structurizr-dsl:${property("structurizr-dsl.version")}")
     implementation("cc.catalysts.structurizr:structurizr-kotlin:${property("structurizr-kotlin.version")}")
 
-    // application flows recording
-    implementation(files("libs/appmap-1.1.0.jar"))
-
     // source code analysis
-    runtimeOnly("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.2")
-    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:${property("detekt.version")}")
+    //runtimeOnly("org.jetbrains.kotlinx:kotlinx-html-jvm:0.8.1")
+    //detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:${property("detekt.version")}")
 }
 
-version = "1.0.0"
-java.sourceCompatibility = JavaVersion.VERSION_11
-
-springBoot {
-    mainClass.set("edu.software.craftsmanship.blueprint.boot.BlueprintApplicationKt")
-    buildInfo {
-        properties {
-            artifact = "arch-blueprint-kotlin"
-            version = System.getProperty("version") ?: "unspecified"
-            group = "edu.software.craftsmanship"
-            name = "blueprint"
-        }
-    }
-}
-
-configure<ProcessResources>("processResources") {
-    filesMatching("**/*.yml") {
-        expand(project.properties)
-    }
-    from("openapi.yaml") {
-        into(".")
-    }
-}
-
-inline fun <reified C> Project.configure(name: String, configuration: C.() -> Unit) {
-    (this.tasks.getByName(name) as C).configuration()
-}
-
-jib {
-    container {
-        jvmFlags = mutableListOf(
-            "-XX:+UseContainerSupport",
-            "-XX:MaxRAMPercentage=50.0",
-            "-Djava.security.egd=file:/dev/urandom",
-            "-Dsun.net.inetaddr.ttl=0",
-            "-Dsun.net.inetaddr.negative.ttl=0"
-        )
-    }
-}
-
-detekt {
+/*detekt {
     toolVersion = "${property("detekt.version")}"
-    input = files("$projectDir/src/main/kotlin", "$projectDir/src/test/kotlin")
     config = files("$projectDir/detekt.yml")
     buildUponDefaultConfig = true
     ignoreFailures = true
+    source = files("$projectDir/src/main/kotlin", "$projectDir/src/test/kotlin")
+    reportsDir = file("$buildDir/reports/detekt")
+}*/
 
-    reports {
-        xml {
-            enabled = true
-            destination = file("$buildDir/reports/detekt/detekt.xml")
-        }
-        html {
-            enabled = true
-            destination = file("$buildDir/reports/detekt/detekt.html")
-        }
-    }
+contracts {
+    failOnNoContracts.set(false)
 }
 
 allure {
-    version = "2.13.9"
-    aspectjweaver = true
-    autoconfigure = true
-    resultsDir = file("$buildDir/reports/tests/allure-results")
-    reportDir = file("$buildDir/reports/tests/allure")
 }
 
 appmap {
     configFile.set(file("$projectDir/appmap.yml"))
     outputDirectory.set(file("$buildDir/appmap"))
+    isSkip = false
     debug = "info"
     debugFile.set(file("$buildDir/appmap/agent.log"))
     eventValueSize = 1024
 }
 
-tasks {
-    withType<Test> {
-        useJUnitPlatform()
+swaggerSources {
+    create("apidoc") {
+        setInputFile(file("$rootDir/src/main/resources/api/openapi.yaml"))
     }
+}
 
+plantuml {
+    options {
+        format = "svg"
+    }
+    diagrams {
+        create("hexagonal") {
+            sourceFile = project.file("doc/uml/hexagonal.puml")
+        }
+        create("domain-model") {
+            sourceFile = project.file("doc/uml/domain-model.puml")
+        }
+        create("data-model") {
+            sourceFile = project.file("doc/uml/data-model.puml")
+        }
+    }
+}
+
+python {
+    scope = PythonExtension.Scope.USER
+}
+
+mkdocs {
+    strict = false
+    updateSiteUrl = false
+    sourcesDir = "doc"
+    buildDir = "build/mkdocs"
+    publish.docPath = ""
+}
+
+gitPublish {
+    contents {
+        from(mkdocs.buildDir)
+        from("build/reports/tests") {
+            into("reports/tests")
+        }
+        from("build/plantuml") {
+            into("uml")
+        }
+        from("build/swagger-ui-apidoc") {
+            into("api")
+        }
+        from("doc/postman") {
+            into("postman")
+        }
+        from("build/appmap/junit") {
+            into("appmap")
+        }
+    }
+}
+
+springBoot {
+    mainClass.set("edu.obya.blueprint.client.ApplicationKt")
+}
+
+tasks {
+    test {
+        useJUnitPlatform()
+        testLogging {
+            exceptionFormat = TestExceptionFormat.FULL
+            events = mutableSetOf(TestLogEvent.FAILED, TestLogEvent.PASSED, TestLogEvent.SKIPPED)
+        }
+    }
+    contractTest {
+        useJUnitPlatform()
+        testLogging {
+            exceptionFormat = TestExceptionFormat.FULL
+            events = mutableSetOf(TestLogEvent.FAILED, TestLogEvent.PASSED, TestLogEvent.SKIPPED)
+        }
+    }
+    val acceptanceTest by registering(Test::class) {
+        description = "Runs the acceptance tests"
+        group = "verification"
+        testClassesDirs = sourceSets["acceptanceTest"].output.classesDirs
+        classpath += sourceSets["acceptanceTest"].runtimeClasspath
+        useJUnitPlatform()
+        testLogging {
+            exceptionFormat = TestExceptionFormat.FULL
+            events = mutableSetOf(TestLogEvent.FAILED, TestLogEvent.PASSED, TestLogEvent.SKIPPED)
+        }
+    }
+    val archTest by registering(Test::class) {
+        description = "Runs the architecture tests"
+        group = "verification"
+        testClassesDirs = sourceSets["archTest"].output.classesDirs
+        classpath += sourceSets["archTest"].runtimeClasspath
+        useJUnitPlatform()
+        testLogging {
+            exceptionFormat = TestExceptionFormat.FULL
+            events = mutableSetOf(TestLogEvent.FAILED, TestLogEvent.PASSED, TestLogEvent.SKIPPED)
+        }
+    }
+    named<Copy>("processAcceptanceTestResources") {
+        duplicatesStrategy = DuplicatesStrategy.WARN
+    }
+    named<Copy>("processArchTestResources") {
+        duplicatesStrategy = DuplicatesStrategy.WARN
+    }
+    check {
+        dependsOn(acceptanceTest)
+        dependsOn(archTest)
+    }
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         kotlinOptions {
             freeCompilerArgs = listOf("-Xjsr305=strict", "-Xjvm-default=all-compatibility")
-            jvmTarget = "11"
+            jvmTarget = "17"
         }
     }
-
-    withType<io.gitlab.arturbosch.detekt.Detekt> {
-        jvmTarget = "11"
-    }
-
-    withType<org.springframework.boot.gradle.tasks.run.BootRun> {
-        environment["spring.profiles.active"] = "local"
-        environment["spring.output.ansi.console-available"] = true
-    }
+    /*withType<io.gitlab.arturbosch.detekt.Detekt> {
+        jvmTarget = "17"
+    }*/
 }

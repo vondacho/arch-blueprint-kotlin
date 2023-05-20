@@ -1,0 +1,20 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/general/general.puml
+
+class JpaCustomer {
+    UUID pk
+    String firstName
+    String lastName
+
+    +JpaCustomer from(CustomerState, CustomerId, UUID)
+    +JpaCustomer set(CustomerState, CustomerId)
+}
+
+JpaCustomer *--> "logicalId" CustomerId
+
+class CustomerId {
+    UUID id
+}
+
+@enduml

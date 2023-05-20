@@ -1,0 +1,11 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/
+    username: blueprint
+    password: blueprint
+
+zonky:
+  test:
+    database:
+      type: POSTGRES
+      provider: ZONKY

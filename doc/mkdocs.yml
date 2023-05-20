@@ -1,0 +1,26 @@
+docs_dir: tech
+
+site_name: arch-blueprint-kotlin
+site_url: https://vondacho.github.io/arch-blueprint-kotlin
+repo_url: https://github.com/vondacho/arch-blueprint-kotlin/
+repo_name: GitHub repository
+
+nav:
+  - Home: index.md
+  - API: api/
+  - Architecture: architecture.md
+  - Testing: testing.md
+  - CI/CD: https://github.com/vondacho/arch-blueprint-kotlin/actions
+  - Miscellaneous: miscellaneous.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: True
+
+theme: material
+
+extra_css:
+  - stylesheets/colors.css
