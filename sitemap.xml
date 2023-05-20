@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://vondacho.github.io/arch-blueprint-kotlin/</loc>
+         <lastmod>2023-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vondacho.github.io/arch-blueprint-kotlin/architecture/</loc>
+         <lastmod>2023-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vondacho.github.io/arch-blueprint-kotlin/miscellaneous/</loc>
+         <lastmod>2023-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vondacho.github.io/arch-blueprint-kotlin/testing/</loc>
+         <lastmod>2023-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>

@@ -1,0 +1,394 @@
+{
+	"info": {
+		"_postman_id": "cd7cbac0-f58e-4b53-856a-855f2cbc93b1",
+		"name": "arch-blueprint-kotlin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2562905"
+	},
+	"item": [
+		{
+			"name": "get all clients",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clients?activatedOnly=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients"
+					],
+					"query": [
+						{
+							"key": "activatedOnly",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search clients",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clients:search?term=doe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients:search"
+					],
+					"query": [
+						{
+							"key": "term",
+							"value": "doe"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create client",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"john\",\n    \"lastName\": \"doe\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modify client",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"bob dylan\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/clients/5a4959a6-3d8e-4e18-95e1-d69b6098cc4d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"5a4959a6-3d8e-4e18-95e1-d69b6098cc4d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clients/5a4959a6-3d8e-4e18-95e1-d69b6098cc4d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"5a4959a6-3d8e-4e18-95e1-d69b6098cc4d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete client",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clients/5a4959a6-3d8e-4e18-95e1-d69b6098cc4d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"5a4959a6-3d8e-4e18-95e1-d69b6098cc4d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restore client",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clients/3b30aa75-cdca-4e16-b2dc-ff7e2e4b2e23:restore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"3b30aa75-cdca-4e16-b2dc-ff7e2e4b2e23:restore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/admin/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "info",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/admin/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "metrics",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/admin/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loggers",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/admin/loggers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"loggers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shutdown",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/admin/shutdown",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"shutdown"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

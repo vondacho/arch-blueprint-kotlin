@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ClientRepositoryIT</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ClientRepositoryIT</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/edu.obya.blueprint.client.adapter.r2dbc.html">edu.obya.blueprint.client.adapter.r2dbc</a> &gt; ClientRepositoryIT</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.863s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">add new client()</td>
+<td class="success">0.107s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delete existing client()</td>
+<td class="success">2.130s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">modify existing client()</td>
+<td class="success">0.081s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">returns the expected client list()</td>
+<td class="success">0.425s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">returns the expected persisted client()</td>
+<td class="success">0.120s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>20:41:13.542 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:41:13.557 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:41:13.603 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [edu.obya.blueprint.client.adapter.r2dbc.ClientRepositoryIT] from class [org.springframework.boot.test.autoconfigure.data.r2dbc.DataR2dbcTestContextBootstrapper]
+20:41:13.618 [Test worker] INFO org.springframework.boot.test.autoconfigure.data.r2dbc.DataR2dbcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.obya.blueprint.client.adapter.r2dbc.ClientRepositoryIT], using SpringBootContextLoader
+20:41:13.624 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [edu.obya.blueprint.client.adapter.r2dbc.ClientRepositoryIT]: class path resource [edu/obya/blueprint/client/adapter/r2dbc/ClientRepositoryIT-context.xml] does not exist
+20:41:13.624 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [edu.obya.blueprint.client.adapter.r2dbc.ClientRepositoryIT]: class path resource [edu/obya/blueprint/client/adapter/r2dbc/ClientRepositoryITContext.groovy] does not exist
+20:41:13.625 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [edu.obya.blueprint.client.adapter.r2dbc.ClientRepositoryIT]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:41:13.625 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [edu.obya.blueprint.client.adapter.r2dbc.ClientRepositoryIT]: ClientRepositoryIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:41:13.789 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin/build/classes/kotlin/main/edu/obya/blueprint/client/BlueprintApplication.class]
+20:41:13.790 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration edu.obya.blueprint.client.BlueprintApplication for test class edu.obya.blueprint.client.adapter.r2dbc.ClientRepositoryIT
+20:41:13.795 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.data.r2dbc.DataR2dbcTestContextBootstrapper - @TestExecutionListeners is not present for class [edu.obya.blueprint.client.adapter.r2dbc.ClientRepositoryIT]: using defaults.
+20:41:13.796 [Test worker] INFO org.springframework.boot.test.autoconfigure.data.r2dbc.DataR2dbcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener, io.zonky.test.db.event.EventPublishingTestExecutionListener, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener]
+20:41:14.282 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.data.r2dbc.DataR2dbcTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+20:41:14.296 [Test worker] INFO org.springframework.boot.test.autoconfigure.data.r2dbc.DataR2dbcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@fe34b86, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3c98781a, com.ninjasquad.springmockk.MockkTestExecutionListener@3f736a16, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4601203a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@53abfc07, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c8c16c0, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener@80bfa9d, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener@47c40b56, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b039c6d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7f5b9db, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@507d64aa, org.springframework.test.context.event.EventPublishingTestExecutionListener@37045b48, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@60b34931, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@4aa21f9d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@71c17a57, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@640ab13c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1e0a864d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@440e3ce6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3e67f5f2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@fd53053, io.zonky.test.db.event.EventPublishingTestExecutionListener@4527f70a]
+20:41:14.301 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7b27e8f4 testClass = ClientRepositoryIT, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@348ad293 testClass = ClientRepositoryIT, locations = '{}', classes = '{class edu.obya.blueprint.client.BlueprintApplication}', contextInitializerClasses = '[]', activeProfiles = '{r2dbc, test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.data.r2dbc.DataR2dbcTestContextBootstrapper=true}', contextCustomizers = set[MockkContextCustomizer(definitions=[]), org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3a60c416, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@203dd56b, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5bb8f9e2, [ImportsContextCustomizer@30f74e79 key = [org.springframework.boot.autoconfigure.data.r2dbc.R2dbcRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.data.r2dbc.R2dbcDataAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.r2dbc.R2dbcAutoConfiguration, org.springframework.boot.autoconfigure.r2dbc.R2dbcTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, edu.obya.blueprint.client.adapter.r2dbc.ClientR2dbcConfiguration, edu.obya.blueprint.client.adapter.r2dbc.PostgresR2dbcDataSourceTestConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7b44b63d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4905c46b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, io.zonky.test.db.EmbeddedDatabaseContextCustomizerFactory$EmbeddedDatabaseContextCustomizer@3d08baec, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+ ██████╗██╗   ██╗███████╗████████╗ ██████╗ ███╗   ███╗███████╗██████╗ 
+██╔════╝██║   ██║██╔════╝╚══██╔══╝██╔═══██╗████╗ ████║██╔════╝██╔══██╗
+██║     ██║   ██║███████╗   ██║   ██║   ██║██╔████╔██║█████╗  ██████╔╝
+██║     ██║   ██║╚════██║   ██║   ██║   ██║██║╚██╔╝██║██╔══╝  ██╔══██╗
+╚██████╗╚██████╔╝███████║   ██║   ╚██████╔╝██║ ╚═╝ ██║███████╗██║  ██║
+ ╚═════╝ ╚═════╝ ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝
+2023-05-20 20:41:15.031  WARN 2742 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/runner/.gradle/caches/modules-2/files-2.1/org.json/json/20220924/5aa95e7688f76c664af205c5937620f02688dfbc/json-20220924.jar!/org/json/JSONObject.class
+	jar:file:/home/runner/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-05-20 20:41:15.061  INFO 2742 --- [    Test worker] e.o.b.c.a.r2dbc.ClientRepositoryIT       : Starting ClientRepositoryIT using Java 17.0.7 on fv-az392-430 with PID 2742 (started by runner in /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin)
+2023-05-20 20:41:15.062  INFO 2742 --- [    Test worker] e.o.b.c.a.r2dbc.ClientRepositoryIT       : The following 2 profiles are active: &quot;r2dbc&quot;, &quot;test&quot;
+2023-05-20 20:41:16.201  INFO 2742 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2023-05-20 20:41:16.383  INFO 2742 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 1 R2DBC repository interfaces.
+2023-05-20 20:41:16.572  INFO 2742 --- [    Test worker] EmbeddedDatabaseContextCustomizerFactory : Replacing 'dataSource' DataSource bean with embedded version
+2023-05-20 20:41:16.743  INFO 2742 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration' of type [io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration$$EnhancerBySpringCGLIB$$25b9ac79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-20 20:41:17.233  INFO 2742 --- [  prefetching-1] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2023-05-20 20:41:17.265  INFO 2742 --- [  prefetching-1] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2023-05-20 20:41:17.760  INFO 2742 --- [  prefetching-1] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2023-05-20 20:41:17.762  INFO 2742 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2023-05-20 20:41:17.782  INFO 2742 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 20.10.24+azure-1
+  API Version: 1.41
+  Operating System: Ubuntu 22.04.2 LTS
+  Total Memory: 6943 MB
+2023-05-20 20:41:17.818  INFO 2742 --- [  prefetching-1] &#x1f433; [testcontainers/ryuk:0.3.4]           : Creating container for image: testcontainers/ryuk:0.3.4
+2023-05-20 20:41:18.005  INFO 2742 --- [  prefetching-1] &#x1f433; [testcontainers/ryuk:0.3.4]           : Container testcontainers/ryuk:0.3.4 is starting: f075eec87ee947c6b3df27aff89fcf7ae9aa702cd16aeff9ba5e8401b566395f
+2023-05-20 20:41:18.519  INFO 2742 --- [  prefetching-1] &#x1f433; [testcontainers/ryuk:0.3.4]           : Container testcontainers/ryuk:0.3.4 started in PT0.726976883S
+2023-05-20 20:41:18.534  INFO 2742 --- [  prefetching-1] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2023-05-20 20:41:18.535  INFO 2742 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : Checking the system...
+2023-05-20 20:41:18.535  INFO 2742 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2023-05-20 20:41:18.536  INFO 2742 --- [  prefetching-1] &#x1f433; [postgres:11-alpine]                  : Creating container for image: postgres:11-alpine
+2023-05-20 20:41:18.559  INFO 2742 --- [  prefetching-1] &#x1f433; [postgres:11-alpine]                  : Container postgres:11-alpine is starting: dcf7688b00689384db21feee9f02b3a5af6179cea6be0e5c192a2c570860014c
+2023-05-20 20:41:20.544  INFO 2742 --- [  prefetching-1] &#x1f433; [postgres:11-alpine]                  : Container postgres:11-alpine started in PT2.008458263S
+2023-05-20 20:41:20.558  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The files belonging to this database system will be owned by user &quot;postgres&quot;.
+2023-05-20 20:41:20.560  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: This user must also own the server process.
+2023-05-20 20:41:20.560  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.560  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The database cluster will be initialized with locale &quot;en_US.utf8&quot;.
+2023-05-20 20:41:20.560  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The default database encoding has accordingly been set to &quot;UTF8&quot;.
+2023-05-20 20:41:20.561  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The default text search configuration will be set to &quot;english&quot;.
+2023-05-20 20:41:20.561  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.561  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: Data page checksums are disabled.
+2023-05-20 20:41:20.561  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.562  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: fixing permissions on existing directory /var/lib/postgresql/data ... ok
+2023-05-20 20:41:20.562  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: creating subdirectories ... ok
+2023-05-20 20:41:20.562  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting default max_connections ... 100
+2023-05-20 20:41:20.562  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting default shared_buffers ... 128MB
+2023-05-20 20:41:20.562  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting default timezone ... UTC
+2023-05-20 20:41:20.568  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting dynamic shared memory implementation ... posix
+2023-05-20 20:41:20.569  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: creating configuration files ... ok
+2023-05-20 20:41:20.569  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: running bootstrap script ... ok
+2023-05-20 20:41:20.569  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: sh: locale: not found
+2023-05-20 20:41:20.569  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-20 20:41:19.443 UTC [30] WARNING:  no usable system locales were found
+2023-05-20 20:41:20.569  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: performing post-bootstrap initialization ... ok
+2023-05-20 20:41:20.570  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.570  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: Sync to disk skipped.
+2023-05-20 20:41:20.570  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The data directory might become corrupt if the operating system crashes.
+2023-05-20 20:41:20.570  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.570  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: Success. You can now start the database server using:
+2023-05-20 20:41:20.571  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.571  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT:     pg_ctl -D /var/lib/postgresql/data -l logfile start
+2023-05-20 20:41:20.571  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.571  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 
+2023-05-20 20:41:20.571  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: WARNING: enabling &quot;trust&quot; authentication for local connections
+2023-05-20 20:41:20.572  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: You can change this by editing pg_hba.conf or using the option -A, or
+2023-05-20 20:41:20.572  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: --auth-local and --auth-host, the next time you run initdb.
+2023-05-20 20:41:20.572  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: waiting for server to start....2023-05-20 20:41:20.037 UTC [36] LOG:  listening on Unix socket &quot;/var/run/postgresql/.s.PGSQL.5432&quot;
+2023-05-20 20:41:20.572  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-20 20:41:20.055 UTC [37] LOG:  database system was shut down at 2023-05-20 20:41:20 UTC
+2023-05-20 20:41:20.573  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-20 20:41:20.062 UTC [36] LOG:  database system is ready to accept connections
+2023-05-20 20:41:20.573  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT:  done
+2023-05-20 20:41:20.573  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: server started
+2023-05-20 20:41:20.573  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: CREATE DATABASE
+2023-05-20 20:41:20.573  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.574  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.574  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+2023-05-20 20:41:20.574  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.574  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-20 20:41:20.394 UTC [36] LOG:  received fast shutdown request
+2023-05-20 20:41:20.574  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-20 20:41:20.394 UTC [36] LOG:  aborting any active transactions
+2023-05-20 20:41:20.575  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: waiting for server to shut down....2023-05-20 20:41:20.397 UTC [36] LOG:  background worker &quot;logical replication launcher&quot; (PID 43) exited with exit code 1
+2023-05-20 20:41:20.575  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-20 20:41:20.399 UTC [38] LOG:  shutting down
+2023-05-20 20:41:20.575  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-20 20:41:20.404 UTC [36] LOG:  database system is shut down
+2023-05-20 20:41:20.575  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT:  done
+2023-05-20 20:41:20.575  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: server stopped
+2023-05-20 20:41:20.576  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.576  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: PostgreSQL init process complete; ready for start up.
+2023-05-20 20:41:20.576  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-20 20:41:20.576  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-20 20:41:20.509 UTC [1] LOG:  listening on IPv4 address &quot;0.0.0.0&quot;, port 5432
+2023-05-20 20:41:20.576  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-20 20:41:20.509 UTC [1] LOG:  listening on IPv6 address &quot;::&quot;, port 5432
+2023-05-20 20:41:20.577  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-20 20:41:20.510 UTC [1] LOG:  listening on Unix socket &quot;/var/run/postgresql/.s.PGSQL.5432&quot;
+2023-05-20 20:41:20.577  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-20 20:41:20.532 UTC [51] LOG:  database system was shut down at 2023-05-20 20:41:20 UTC
+2023-05-20 20:41:20.583  INFO 2742 --- [eam--1410257880] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-20 20:41:20.542 UTC [1] LOG:  database system is ready to accept connections
+2023-05-20 20:41:21.735  INFO 2742 --- [    Test worker] e.o.b.c.a.r2dbc.ClientRepositoryIT       : Started ClientRepositoryIT in 7.397 seconds (JVM running for 9.815)
+2023-05-20 20:41:21.829  INFO 2742 --- [  prefetching-2] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2023-05-20 20:41:21.837  INFO 2742 --- [  prefetching-2] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2023-05-20 20:41:21.838  INFO 2742 --- [  prefetching-2] o.f.c.internal.license.VersionPrinter    : 
+2023-05-20 20:41:21.897  INFO 2742 --- [  prefetching-2] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:32771/ogporyuimdxi (PostgreSQL 11.20)
+2023-05-20 20:41:21.936  INFO 2742 --- [  prefetching-2] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.015s)
+2023-05-20 20:41:21.950  INFO 2742 --- [  prefetching-2] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;public&quot;.&quot;flyway_schema_history&quot; ...
+2023-05-20 20:41:21.991  INFO 2742 --- [  prefetching-2] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;public&quot;: &lt;&lt; Empty Schema &gt;&gt;
+2023-05-20 20:41:22.013  INFO 2742 --- [  prefetching-2] o.f.core.internal.command.DbMigrate      : Migrating schema &quot;public&quot; to version &quot;1 - create client table&quot;
+2023-05-20 20:41:22.032  INFO 2742 --- [  prefetching-2] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema &quot;public&quot;, now at version v1 (execution time 00:00.048s)
+2023-05-20 20:41:22.675  INFO 2742 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/gfwpntqpvbue?user=postgres&amp;password=docker', scope='ClientRepositoryIT#delete existing client'
+2023-05-20 20:41:23.999  INFO 2742 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/gfwpntqpvbue?user=postgres&amp;password=docker', scope='ClientRepositoryIT#returns the expected client list'
+2023-05-20 20:41:24.437  INFO 2742 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/gfwpntqpvbue?user=postgres&amp;password=docker', scope='ClientRepositoryIT#returns the expected persisted client'
+2023-05-20 20:41:24.556  INFO 2742 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/gfwpntqpvbue?user=postgres&amp;password=docker', scope='ClientRepositoryIT#modify existing client'
+2023-05-20 20:41:24.649  INFO 2742 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/gfwpntqpvbue?user=postgres&amp;password=docker', scope='ClientRepositoryIT#add new client'
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.0.2</a> at May 20, 2023, 8:41:37 PM</p>
+</div>
+</div>
+</body>
+</html>

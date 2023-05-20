@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - BasicAT</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>BasicAT</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/edu.obya.blueprint.basic.at.html">edu.obya.blueprint.basic.at</a> &gt; BasicAT</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.074s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">one basic scenario</td>
+<td class="success">3.074s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>20:40:15.852 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:40:15.866 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:40:15.881 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [edu.obya.blueprint.basic.at.BasicATBootstrap] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+20:40:15.907 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.obya.blueprint.basic.at.BasicATBootstrap], using SpringBootContextLoader
+20:40:15.915 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [edu.obya.blueprint.basic.at.BasicATBootstrap]: class path resource [edu/obya/blueprint/basic/at/BasicATBootstrap-context.xml] does not exist
+20:40:15.915 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [edu.obya.blueprint.basic.at.BasicATBootstrap]: class path resource [edu/obya/blueprint/basic/at/BasicATBootstrapContext.groovy] does not exist
+20:40:15.923 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [edu.obya.blueprint.basic.at.BasicATBootstrap]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:40:15.924 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [edu.obya.blueprint.basic.at.BasicATBootstrap]: BasicATBootstrap does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:40:15.981 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [edu.obya.blueprint.basic.at.BasicATBootstrap]
+20:40:16.022 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin/build/classes/kotlin/acceptanceTest/edu/obya/blueprint/basic/at/BasicATSpringBootConfiguration.class]
+20:40:16.023 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration edu.obya.blueprint.basic.at.BasicATSpringBootConfiguration for test class edu.obya.blueprint.basic.at.BasicATBootstrap
+20:40:16.150 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [edu.obya.blueprint.basic.at.BasicATBootstrap]: using defaults.
+20:40:16.151 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener, io.zonky.test.db.event.EventPublishingTestExecutionListener, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener]
+20:40:16.551 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+20:40:16.562 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@35eee641, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5729b410, com.ninjasquad.springmockk.MockkTestExecutionListener@64518270, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3b7c58e7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@79627d27, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6371cf2f, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener@b5b9333, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener@52b959df, org.springframework.test.context.transaction.TransactionalTestExecutionListener@38588dea, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@553d2579, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2a8f6e6, org.springframework.test.context.event.EventPublishingTestExecutionListener@1ac730cd, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@668cc9a2, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@5aa62ee7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1f7cec93, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3c9ef6e9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3cdff901, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@57e5396b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2f054f70, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6467ddc7, io.zonky.test.db.event.EventPublishingTestExecutionListener@27b337bb]
+ ██████╗██╗   ██╗███████╗████████╗ ██████╗ ███╗   ███╗███████╗██████╗ 
+██╔════╝██║   ██║██╔════╝╚══██╔══╝██╔═══██╗████╗ ████║██╔════╝██╔══██╗
+██║     ██║   ██║███████╗   ██║   ██║   ██║██╔████╔██║█████╗  ██████╔╝
+██║     ██║   ██║╚════██║   ██║   ██║   ██║██║╚██╔╝██║██╔══╝  ██╔══██╗
+╚██████╗╚██████╔╝███████║   ██║   ╚██████╔╝██║ ╚═╝ ██║███████╗██║  ██║
+ ╚═════╝ ╚═════╝ ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝
+2023-05-20 20:40:17.198  WARN 2016 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/runner/.gradle/caches/modules-2/files-2.1/org.json/json/20220924/5aa95e7688f76c664af205c5937620f02688dfbc/json-20220924.jar!/org/json/JSONObject.class
+	jar:file:/home/runner/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-05-20 20:40:17.223  INFO 2016 --- [    Test worker] e.o.blueprint.basic.at.BasicATBootstrap  : Starting BasicATBootstrap using Java 17.0.7 on fv-az392-430 with PID 2016 (started by runner in /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin)
+2023-05-20 20:40:17.224  INFO 2016 --- [    Test worker] e.o.blueprint.basic.at.BasicATBootstrap  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-05-20 20:40:18.133  INFO 2016 --- [    Test worker] e.o.blueprint.basic.at.BasicATBootstrap  : Started BasicATBootstrap in 1.544 seconds (JVM running for 6.195)
+
+Scenario: one basic scenario ?[90m# features/basic/sample.feature:3?[0m
+  ?[32mGiven ?[0m?[32man initial state?[0m     ?[90m# void edu.obya.blueprint.basic.at.steps.FixtureSteps.initialState()?[0m
+  ?[32mWhen ?[0m?[32mI do that?[0m             ?[90m# void edu.obya.blueprint.basic.at.steps.ActionSteps.iDoThat()?[0m
+  ?[32mThen ?[0m?[32mfinal state is valid?[0m  ?[90m# void edu.obya.blueprint.basic.at.steps.AssertionSteps.finalStateIsValid()?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.0.2</a> at May 20, 2023, 8:40:52 PM</p>
+</div>
+</div>
+</body>
+</html>
