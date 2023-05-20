@@ -20,7 +20,7 @@ import reactor.core.publisher.Mono
 import kotlin.io.encoding.Base64
 import kotlin.io.encoding.ExperimentalEncodingApi
 
-class ClientWebApiClient(private val webClient: WebClient) : edu.obya.blueprint.client.at.api.ClientApiClient {
+class ClientWebApiClient(private val webClient: WebClient) : ClientApiClient {
 
     override fun addClient(input: TestClientInput): Mono<TestResult<ClientId, HttpStatus>> {
         return webClient.post().uri("clients")

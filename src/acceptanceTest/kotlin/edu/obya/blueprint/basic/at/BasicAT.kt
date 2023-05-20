@@ -11,11 +11,11 @@ import org.springframework.boot.test.context.SpringBootTest
 @Suite
 @SelectClasspathResource("features/basic")
 @ConfigurationParameter(key = Constants.GLUE_PROPERTY_NAME, value = "edu.obya.blueprint.basic.at")
-class BasicAT
+internal class BasicAT
 
 @CucumberContextConfiguration
 @SpringBootTest
-class BasicATBootstrap
+internal class BasicATBootstrap
 
 @SpringBootConfiguration
-class BasicATSpringBootConfiguration
+internal class BasicATSpringBootConfiguration

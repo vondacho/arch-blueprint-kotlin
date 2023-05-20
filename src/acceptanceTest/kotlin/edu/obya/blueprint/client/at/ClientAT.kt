@@ -29,14 +29,14 @@ import org.springframework.test.context.ActiveProfiles
 @Suite
 @SelectClasspathResource("features/client")
 @ConfigurationParameter(key = Constants.GLUE_PROPERTY_NAME, value = "edu.obya.blueprint.client.at")
-class ClientAT
+internal class ClientAT
 
-@ActiveProfiles("test", "r2dbc")
+@ActiveProfiles("test", "r2dbc", "at")
 @AutoConfigureEmbeddedDatabase
 @EnableAutoConfiguration
 @CucumberContextConfiguration
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
-class ClientATBootstrap {
+internal class ClientATBootstrap {
 
     @Autowired
     lateinit var clientState: ClientState
@@ -67,4 +67,4 @@ class ClientATBootstrap {
 }
 
 @SpringBootConfiguration
-class ClientATSpringBootConfiguration
+internal class ClientATSpringBootConfiguration

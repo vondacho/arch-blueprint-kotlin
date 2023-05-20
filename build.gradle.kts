@@ -99,9 +99,7 @@ dependencies {
         exclude(group = "junit", module = "junit")
     }
     testImplementation("org.springframework.security:spring-security-test")
-    testImplementation("io.zonky.test:embedded-database-spring-test:${property("embedded-database-spring-test.version")}") {
-        exclude("net.java.dev.jna", "jna")
-    }
+    testImplementation("io.zonky.test:embedded-database-spring-test:${property("embedded-database-spring-test.version")}")
     testImplementation("io.projectreactor:reactor-test")
     testImplementation("io.mockk:mockk:${property("mockk.version")}")
     testImplementation("com.ninja-squad:springmockk:${property("springmockk.version")}")

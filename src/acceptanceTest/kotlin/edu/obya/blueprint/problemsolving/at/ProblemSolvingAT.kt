@@ -11,11 +11,11 @@ import org.springframework.boot.test.context.SpringBootTest
 @Suite
 @SelectClasspathResource("features/problemsolving")
 @ConfigurationParameter(key = Constants.GLUE_PROPERTY_NAME, value = "edu.obya.blueprint.problemsolving.at")
-class ProblemSolvingAT
+internal class ProblemSolvingAT
 
 @CucumberContextConfiguration
 @SpringBootTest
-class ProblemSolvingATBootstrap
+internal class ProblemSolvingATBootstrap
 
 @SpringBootConfiguration
-class ProblemSolvingATSpringBootConfiguration
+internal class ProblemSolvingATSpringBootConfiguration

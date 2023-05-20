@@ -1,0 +1,9 @@
+server:
+  port: 9090
+  address: localhost
+
+zonky:
+  test:
+    database:
+      provider: DOCKER
+      type: POSTGRES

@@ -26,13 +26,13 @@ import reactor.core.publisher.Mono
 import java.util.*
 import java.util.function.Supplier
 
-@ActiveProfiles("test")
+@ActiveProfiles("test", "cdc")
 @Provider("clientAPI")
 @PactFolder("client/cdc/pact")
 @Import(ClientPactContextConfiguration::class)
 @AutoConfigureEmbeddedDatabase
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class ClientPactProviderTest {
+internal class ClientPactProviderTest {
 
     @LocalServerPort
     var port = 0

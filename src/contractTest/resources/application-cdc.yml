@@ -8,4 +8,4 @@ zonky:
   test:
     database:
       type: POSTGRES
-      provider: ZONKY
+      provider: DOCKER
