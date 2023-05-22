@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.704s</div>
+<div class="counter">2.930s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,22 +79,22 @@
 </thead>
 <tr>
 <td class="success">shouldCreateClient()</td>
-<td class="success">1.542s</td>
+<td class="success">1.775s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldDeleteClient()</td>
-<td class="success">0.431s</td>
+<td class="success">0.429s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldModifyClient()</td>
-<td class="success">0.318s</td>
+<td class="success">0.320s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldRemoveClient()</td>
-<td class="success">0.413s</td>
+<td class="success">0.406s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,16 +102,16 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2023-05-22 08:57:40.919  INFO 2725 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [edu.obya.blueprint.client.adapter.rest.ClientControllerIT]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-05-22 08:57:40.935  INFO 2725 --- [    Test worker] b.t.a.w.r.WebFluxTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener, io.zonky.test.db.event.EventPublishingTestExecutionListener, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener]
-2023-05-22 08:57:40.937  INFO 2725 --- [    Test worker] b.t.a.w.r.WebFluxTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46d83ec4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2ccb8db3, com.ninjasquad.springmockk.MockkTestExecutionListener@3941bdd7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@69c7eafd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6e6ec71f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e387974, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener@2a23c061, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener@7c6557da, org.springframework.test.context.transaction.TransactionalTestExecutionListener@642b2176, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3985175e, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@d91e8c7, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b9ca528, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@66011fbc, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@77afdbc5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@757ad227, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4b718c45, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25639668, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2c1b10f2, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@f5314bc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4807b2b7, io.zonky.test.db.event.EventPublishingTestExecutionListener@71eead09]
+<pre>2023-05-22 09:17:04.445  INFO 2693 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [edu.obya.blueprint.client.adapter.rest.ClientControllerIT]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-22 09:17:04.463  INFO 2693 --- [    Test worker] b.t.a.w.r.WebFluxTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener, io.zonky.test.db.event.EventPublishingTestExecutionListener, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener]
+2023-05-22 09:17:04.464  INFO 2693 --- [    Test worker] b.t.a.w.r.WebFluxTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4778c085, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@76929266, com.ninjasquad.springmockk.MockkTestExecutionListener@20331c8e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1a13b5c1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1b6e32ee, org.springframework.test.context.support.DirtiesContextTestExecutionListener@798d8247, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener@41623694, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener@46d83ec4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ccb8db3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3941bdd7, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@69c7eafd, org.springframework.test.context.event.EventPublishingTestExecutionListener@6e6ec71f, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@1e387974, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@2a23c061, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7c6557da, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@642b2176, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3985175e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@d91e8c7, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5b9ca528, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@66011fbc, io.zonky.test.db.event.EventPublishingTestExecutionListener@77afdbc5]
 _________ .__  .__               __
 \_   ___ \|  | |__| ____   _____/  |_  ______
 /    \  \/|  | |  |/ __ \ /    \   __\/  ___/
 \     \___|  |_|  \  ___/|   |  \  |  \___ \
  \______  /____/__|\___  &gt;___|  /__| /____  &gt;
         \/             \/     \/          \/
-2023-05-22 08:57:40.998  WARN 2725 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2023-05-22 09:17:04.536  WARN 2693 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -120,18 +120,18 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2023-05-22 08:57:41.000  INFO 2725 --- [    Test worker] e.o.b.c.adapter.rest.ClientControllerIT  : Starting ClientControllerIT using Java 17.0.7 on fv-az440-905 with PID 2725 (started by runner in /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin)
-2023-05-22 08:57:41.000  INFO 2725 --- [    Test worker] e.o.b.c.adapter.rest.ClientControllerIT  : The following 2 profiles are active: &quot;test&quot;, &quot;r2dbc&quot;
-2023-05-22 08:57:41.218  INFO 2725 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
-2023-05-22 08:57:41.234  INFO 2725 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 R2DBC repository interfaces.
-2023-05-22 08:57:41.394  INFO 2725 --- [    Test worker] EmbeddedDatabaseContextCustomizerFactory : Replacing 'dataSource' DataSource bean with embedded version
-2023-05-22 08:57:42.286  INFO 2725 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration' of type [io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration$$EnhancerBySpringCGLIB$$87e08a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-05-22 08:57:42.301  INFO 2725 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-05-22 08:57:45.228  INFO 2725 --- [    Test worker] e.o.b.c.adapter.rest.ClientControllerIT  : Started ClientControllerIT in 4.287 seconds (JVM running for 14.056)
-2023-05-22 08:57:45.253  INFO 2725 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/cjuaxuafwiyf?user=postgres&amp;password=docker', scope='ClientControllerIT#shouldCreateClient'
-2023-05-22 08:57:46.818  INFO 2725 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/cjuaxuafwiyf?user=postgres&amp;password=docker', scope='ClientControllerIT#shouldModifyClient'
-2023-05-22 08:57:47.143  INFO 2725 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/cjuaxuafwiyf?user=postgres&amp;password=docker', scope='ClientControllerIT#shouldDeleteClient'
-2023-05-22 08:57:47.590  INFO 2725 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/cjuaxuafwiyf?user=postgres&amp;password=docker', scope='ClientControllerIT#shouldRemoveClient'
+2023-05-22 09:17:04.537  INFO 2693 --- [    Test worker] e.o.b.c.adapter.rest.ClientControllerIT  : Starting ClientControllerIT using Java 17.0.7 on fv-az548-899 with PID 2693 (started by runner in /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin)
+2023-05-22 09:17:04.538  INFO 2693 --- [    Test worker] e.o.b.c.adapter.rest.ClientControllerIT  : The following 2 profiles are active: &quot;test&quot;, &quot;r2dbc&quot;
+2023-05-22 09:17:04.781  INFO 2693 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2023-05-22 09:17:04.805  INFO 2693 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 R2DBC repository interfaces.
+2023-05-22 09:17:04.917  INFO 2693 --- [    Test worker] EmbeddedDatabaseContextCustomizerFactory : Replacing 'dataSource' DataSource bean with embedded version
+2023-05-22 09:17:05.833  INFO 2693 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration' of type [io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration$$EnhancerBySpringCGLIB$$87e08a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-22 09:17:05.840  INFO 2693 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-22 09:17:08.978  INFO 2693 --- [    Test worker] e.o.b.c.adapter.rest.ClientControllerIT  : Started ClientControllerIT in 4.51 seconds (JVM running for 14.142)
+2023-05-22 09:17:09.017  INFO 2693 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/isycbpydblig?user=postgres&amp;password=docker', scope='ClientControllerIT#shouldCreateClient'
+2023-05-22 09:17:10.809  INFO 2693 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/isycbpydblig?user=postgres&amp;password=docker', scope='ClientControllerIT#shouldModifyClient'
+2023-05-22 09:17:11.139  INFO 2693 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/isycbpydblig?user=postgres&amp;password=docker', scope='ClientControllerIT#shouldDeleteClient'
+2023-05-22 09:17:11.580  INFO 2693 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32771/isycbpydblig?user=postgres&amp;password=docker', scope='ClientControllerIT#shouldRemoveClient'
 </pre>
 </span>
 </div>
@@ -143,7 +143,7 @@ You may wish to exclude one of them to ensure predictable runtime behavior
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.0.2</a> at May 22, 2023, 8:57:50 AM</p>
+<a href="http://www.gradle.org">Gradle 8.0.2</a> at May 22, 2023, 9:17:14 AM</p>
 </div>
 </div>
 </body>

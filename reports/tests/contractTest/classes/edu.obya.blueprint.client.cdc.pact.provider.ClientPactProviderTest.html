@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.956s</div>
+<div class="counter">3.485s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,43 +81,43 @@
 <tr>
 <td class="success">consumerA - restore default client interaction</td>
 <td class="success">verifyPact(PactVerificationContext)[1]</td>
-<td class="success">1.929s</td>
+<td class="success">1.604s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">consumerA - replace default client interaction</td>
 <td class="success">verifyPact(PactVerificationContext)[2]</td>
-<td class="success">1.070s</td>
+<td class="success">1.068s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">consumerA - get default client interaction</td>
 <td class="success">verifyPact(PactVerificationContext)[3]</td>
-<td class="success">0.203s</td>
+<td class="success">0.193s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">consumerA - remove default client interaction</td>
 <td class="success">verifyPact(PactVerificationContext)[4]</td>
-<td class="success">0.176s</td>
+<td class="success">0.161s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">consumerA - add default client interaction</td>
 <td class="success">verifyPact(PactVerificationContext)[5]</td>
-<td class="success">0.276s</td>
+<td class="success">0.252s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">consumerB - get default client interaction</td>
 <td class="success">verifyPact(PactVerificationContext)[6]</td>
-<td class="success">0.258s</td>
+<td class="success">0.157s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">consumerB - get default client without authentication</td>
 <td class="success">verifyPact(PactVerificationContext)[7]</td>
-<td class="success">0.044s</td>
+<td class="success">0.050s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -125,28 +125,28 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:57:57.626 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-08:57:57.628 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-08:57:57.650 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-08:57:57.664 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest], using SpringBootContextLoader
-08:57:57.667 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest]: class path resource [edu/obya/blueprint/client/cdc/pact/provider/ClientPactProviderTest-context.xml] does not exist
-08:57:57.667 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest]: class path resource [edu/obya/blueprint/client/cdc/pact/provider/ClientPactProviderTestContext.groovy] does not exist
-08:57:57.668 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-08:57:57.668 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest]: ClientPactProviderTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-08:57:57.789 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin/build/classes/kotlin/main/edu/obya/blueprint/client/BlueprintApplication.class]
-08:57:57.793 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration edu.obya.blueprint.client.BlueprintApplication for test class edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest
-08:57:57.889 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest]: using defaults.
-08:57:57.890 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener, io.zonky.test.db.event.EventPublishingTestExecutionListener, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener]
-08:57:57.908 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
-08:57:57.923 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6630dd28, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5909ae90, com.ninjasquad.springmockk.MockkTestExecutionListener@4489f60f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@fe08eaf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6fd9dbe6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b3085a3, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener@70022d44, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener@7b1c501d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5abbb273, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@25d9291a, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@445058e8, org.springframework.test.context.event.EventPublishingTestExecutionListener@5d5574c7, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@5a7a6d34, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@36871e98, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@70d687b8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6533629, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@f49e81a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1b444b5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@459bf87c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5ae66c98, io.zonky.test.db.event.EventPublishingTestExecutionListener@1aaf46e6]
-08:57:57.926 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@28f90752 testClass = ClientPactProviderTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@4f20b022 testClass = ClientPactProviderTest, locations = '{}', classes = '{class edu.obya.blueprint.client.BlueprintApplication}', contextInitializerClasses = '[]', activeProfiles = '{test, cdc}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[MockkContextCustomizer(definitions=[[MockkDefinition@72a34537 name = [null], typeToMock = edu.obya.blueprint.client.domain.service.ClientRepository, extraInterfaces = set[[empty]], clear = AFTER], [MockkDefinition@24fef542 name = [null], typeToMock = java.util.function.Supplier&lt;java.util.UUID&gt;, extraInterfaces = set[[empty]], clear = AFTER]]), org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5ee77baf, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6e73974, [ImportsContextCustomizer@44ddb518 key = [edu.obya.blueprint.client.cdc.pact.provider.ClientPactContextConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7eae55, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2bf3ec4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@329b331f, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@74ce7fdf, io.zonky.test.db.EmbeddedDatabaseContextCustomizerFactory$EmbeddedDatabaseContextCustomizer@101ada80, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@40cb698e], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+<pre>09:17:21.945 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+09:17:21.947 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+09:17:21.966 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+09:17:21.975 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest], using SpringBootContextLoader
+09:17:21.977 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest]: class path resource [edu/obya/blueprint/client/cdc/pact/provider/ClientPactProviderTest-context.xml] does not exist
+09:17:21.978 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest]: class path resource [edu/obya/blueprint/client/cdc/pact/provider/ClientPactProviderTestContext.groovy] does not exist
+09:17:21.978 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+09:17:21.978 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest]: ClientPactProviderTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:17:22.067 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin/build/classes/kotlin/main/edu/obya/blueprint/client/BlueprintApplication.class]
+09:17:22.068 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration edu.obya.blueprint.client.BlueprintApplication for test class edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest
+09:17:22.149 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [edu.obya.blueprint.client.cdc.pact.provider.ClientPactProviderTest]: using defaults.
+09:17:22.149 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener, io.zonky.test.db.event.EventPublishingTestExecutionListener, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener]
+09:17:22.162 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+09:17:22.170 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6630dd28, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5909ae90, com.ninjasquad.springmockk.MockkTestExecutionListener@4489f60f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@fe08eaf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6fd9dbe6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b3085a3, io.zonky.test.db.EmbeddedDatabaseTestExecutionListener@70022d44, io.zonky.test.db.flyway.OptimizedFlywayTestExecutionListener@7b1c501d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5abbb273, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@25d9291a, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@445058e8, org.springframework.test.context.event.EventPublishingTestExecutionListener@5d5574c7, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@5a7a6d34, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@36871e98, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@70d687b8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6533629, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@f49e81a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1b444b5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@459bf87c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5ae66c98, io.zonky.test.db.event.EventPublishingTestExecutionListener@1aaf46e6]
+09:17:22.172 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@28f90752 testClass = ClientPactProviderTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@4f20b022 testClass = ClientPactProviderTest, locations = '{}', classes = '{class edu.obya.blueprint.client.BlueprintApplication}', contextInitializerClasses = '[]', activeProfiles = '{test, cdc}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[MockkContextCustomizer(definitions=[[MockkDefinition@72a34537 name = [null], typeToMock = edu.obya.blueprint.client.domain.service.ClientRepository, extraInterfaces = set[[empty]], clear = AFTER], [MockkDefinition@24fef542 name = [null], typeToMock = java.util.function.Supplier&lt;java.util.UUID&gt;, extraInterfaces = set[[empty]], clear = AFTER]]), org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5ee77baf, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6e73974, [ImportsContextCustomizer@44ddb518 key = [edu.obya.blueprint.client.cdc.pact.provider.ClientPactContextConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7eae55, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2bf3ec4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@329b331f, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@74ce7fdf, io.zonky.test.db.EmbeddedDatabaseContextCustomizerFactory$EmbeddedDatabaseContextCustomizer@101ada80, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@40cb698e], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
 _________ .__  .__               __
 \_   ___ \|  | |__| ____   _____/  |_  ______
 /    \  \/|  | |  |/ __ \ /    \   __\/  ___/
 \     \___|  |_|  \  ___/|   |  \  |  \___ \
  \______  /____/__|\___  &gt;___|  /__| /____  &gt;
         \/             \/     \/          \/
-2023-05-22 08:57:58.248  WARN 3128 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2023-05-22 09:17:22.474  WARN 3108 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -155,94 +155,94 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2023-05-22 08:57:58.259  INFO 3128 --- [    Test worker] e.o.b.c.c.p.p.ClientPactProviderTest     : Starting ClientPactProviderTest using Java 17.0.7 on fv-az440-905 with PID 3128 (started by runner in /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin)
-2023-05-22 08:57:58.259  INFO 3128 --- [    Test worker] e.o.b.c.c.p.p.ClientPactProviderTest     : The following 2 profiles are active: &quot;test&quot;, &quot;cdc&quot;
-2023-05-22 08:57:59.358  INFO 3128 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
-2023-05-22 08:57:59.506  INFO 3128 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 1 R2DBC repository interfaces.
-2023-05-22 08:57:59.590  INFO 3128 --- [    Test worker] EmbeddedDatabaseContextCustomizerFactory : Replacing 'dataSource' DataSource bean with embedded version
-2023-05-22 08:58:01.608  INFO 3128 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-05-22 08:58:01.762  INFO 3128 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration' of type [io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration$$EnhancerBySpringCGLIB$$16101d9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-05-22 08:58:05.095  INFO 3128 --- [  prefetching-1] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-2023-05-22 08:58:05.120  INFO 3128 --- [  prefetching-1] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-2023-05-22 08:58:05.716  INFO 3128 --- [  prefetching-1] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
-2023-05-22 08:58:05.719  INFO 3128 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
-2023-05-22 08:58:05.741  INFO 3128 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : Connected to docker: 
+2023-05-22 09:17:22.484  INFO 3108 --- [    Test worker] e.o.b.c.c.p.p.ClientPactProviderTest     : Starting ClientPactProviderTest using Java 17.0.7 on fv-az548-899 with PID 3108 (started by runner in /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin)
+2023-05-22 09:17:22.484  INFO 3108 --- [    Test worker] e.o.b.c.c.p.p.ClientPactProviderTest     : The following 2 profiles are active: &quot;test&quot;, &quot;cdc&quot;
+2023-05-22 09:17:23.659  INFO 3108 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2023-05-22 09:17:23.796  INFO 3108 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 1 R2DBC repository interfaces.
+2023-05-22 09:17:23.870  INFO 3108 --- [    Test worker] EmbeddedDatabaseContextCustomizerFactory : Replacing 'dataSource' DataSource bean with embedded version
+2023-05-22 09:17:25.823  INFO 3108 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-22 09:17:25.951  INFO 3108 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration' of type [io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration$$EnhancerBySpringCGLIB$$a4288f11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-22 09:17:29.438  INFO 3108 --- [  prefetching-1] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2023-05-22 09:17:29.464  INFO 3108 --- [  prefetching-1] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2023-05-22 09:17:30.037  INFO 3108 --- [  prefetching-1] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2023-05-22 09:17:30.040  INFO 3108 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2023-05-22 09:17:30.059  INFO 3108 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : Connected to docker: 
   Server Version: 20.10.24+azure-1
   API Version: 1.41
   Operating System: Ubuntu 22.04.2 LTS
   Total Memory: 6943 MB
-2023-05-22 08:58:05.785  INFO 3128 --- [  prefetching-1] &#x1f433; [testcontainers/ryuk:0.3.4]           : Creating container for image: testcontainers/ryuk:0.3.4
-2023-05-22 08:58:05.925  INFO 3128 --- [  prefetching-1] &#x1f433; [testcontainers/ryuk:0.3.4]           : Container testcontainers/ryuk:0.3.4 is starting: 54d37413af51453ca7898b9e14771c21a2b9714a505edfa7824bfb852540b09b
-2023-05-22 08:58:06.372  INFO 3128 --- [  prefetching-1] &#x1f433; [testcontainers/ryuk:0.3.4]           : Container testcontainers/ryuk:0.3.4 started in PT0.618213516S
-2023-05-22 08:58:06.384  INFO 3128 --- [  prefetching-1] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-2023-05-22 08:58:06.384  INFO 3128 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : Checking the system...
-2023-05-22 08:58:06.385  INFO 3128 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
-2023-05-22 08:58:06.386  INFO 3128 --- [  prefetching-1] &#x1f433; [postgres:11-alpine]                  : Creating container for image: postgres:11-alpine
-2023-05-22 08:58:06.401  INFO 3128 --- [  prefetching-1] &#x1f433; [postgres:11-alpine]                  : Container postgres:11-alpine is starting: 429e43ef871f406bb12e87bd80ae083f4d6a9c23b65e79252ed73d47e269d487
-2023-05-22 08:58:07.782  INFO 3128 --- [  prefetching-1] &#x1f433; [postgres:11-alpine]                  : Container postgres:11-alpine started in PT1.39612398S
-2023-05-22 08:58:07.795  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The files belonging to this database system will be owned by user &quot;postgres&quot;.
-2023-05-22 08:58:07.796  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: This user must also own the server process.
-2023-05-22 08:58:07.797  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.808  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The database cluster will be initialized with locale &quot;en_US.utf8&quot;.
-2023-05-22 08:58:07.813  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The default database encoding has accordingly been set to &quot;UTF8&quot;.
-2023-05-22 08:58:07.813  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The default text search configuration will be set to &quot;english&quot;.
-2023-05-22 08:58:07.814  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.814  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: Data page checksums are disabled.
-2023-05-22 08:58:07.814  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.815  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: fixing permissions on existing directory /var/lib/postgresql/data ... ok
-2023-05-22 08:58:07.815  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: creating subdirectories ... ok
-2023-05-22 08:58:07.815  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting default max_connections ... 100
-2023-05-22 08:58:07.815  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting default shared_buffers ... 128MB
-2023-05-22 08:58:07.816  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting default timezone ... UTC
-2023-05-22 08:58:07.816  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting dynamic shared memory implementation ... posix
-2023-05-22 08:58:07.816  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: creating configuration files ... ok
-2023-05-22 08:58:07.816  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: running bootstrap script ... ok
-2023-05-22 08:58:07.817  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: sh: locale: not found
-2023-05-22 08:58:07.817  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 08:58:07.097 UTC [30] WARNING:  no usable system locales were found
-2023-05-22 08:58:07.817  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: performing post-bootstrap initialization ... ok
-2023-05-22 08:58:07.819  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.819  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: Sync to disk skipped.
-2023-05-22 08:58:07.821  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The data directory might become corrupt if the operating system crashes.
-2023-05-22 08:58:07.822  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 
-2023-05-22 08:58:07.822  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: WARNING: enabling &quot;trust&quot; authentication for local connections
-2023-05-22 08:58:07.822  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: You can change this by editing pg_hba.conf or using the option -A, or
-2023-05-22 08:58:07.822  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: --auth-local and --auth-host, the next time you run initdb.
-2023-05-22 08:58:07.823  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.823  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: Success. You can now start the database server using:
-2023-05-22 08:58:07.823  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.823  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT:     pg_ctl -D /var/lib/postgresql/data -l logfile start
-2023-05-22 08:58:07.824  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.824  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: waiting for server to start....2023-05-22 08:58:07.495 UTC [36] LOG:  listening on Unix socket &quot;/var/run/postgresql/.s.PGSQL.5432&quot;
-2023-05-22 08:58:07.824  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 08:58:07.510 UTC [37] LOG:  database system was shut down at 2023-05-22 08:58:07 UTC
-2023-05-22 08:58:07.824  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 08:58:07.516 UTC [36] LOG:  database system is ready to accept connections
-2023-05-22 08:58:07.825  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT:  done
-2023-05-22 08:58:07.825  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: server started
-2023-05-22 08:58:07.826  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: CREATE DATABASE
-2023-05-22 08:58:07.829  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.829  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.830  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
-2023-05-22 08:58:07.830  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.830  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 08:58:07.636 UTC [36] LOG:  received fast shutdown request
-2023-05-22 08:58:07.830  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 08:58:07.636 UTC [36] LOG:  aborting any active transactions
-2023-05-22 08:58:07.831  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 08:58:07.638 UTC [36] LOG:  background worker &quot;logical replication launcher&quot; (PID 43) exited with exit code 1
-2023-05-22 08:58:07.831  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: waiting for server to shut down....2023-05-22 08:58:07.639 UTC [38] LOG:  shutting down
-2023-05-22 08:58:07.831  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 08:58:07.643 UTC [36] LOG:  database system is shut down
-2023-05-22 08:58:07.831  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT:  done
-2023-05-22 08:58:07.832  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: server stopped
-2023-05-22 08:58:07.832  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.832  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: PostgreSQL init process complete; ready for start up.
-2023-05-22 08:58:07.832  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
-2023-05-22 08:58:07.832  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 08:58:07.749 UTC [1] LOG:  listening on IPv4 address &quot;0.0.0.0&quot;, port 5432
-2023-05-22 08:58:07.833  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 08:58:07.749 UTC [1] LOG:  listening on IPv6 address &quot;::&quot;, port 5432
-2023-05-22 08:58:07.833  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 08:58:07.750 UTC [1] LOG:  listening on Unix socket &quot;/var/run/postgresql/.s.PGSQL.5432&quot;
-2023-05-22 08:58:07.833  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 08:58:07.766 UTC [51] LOG:  database system was shut down at 2023-05-22 08:58:07 UTC
-2023-05-22 08:58:07.833  INFO 3128 --- [ream--924020385] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 08:58:07.772 UTC [1] LOG:  database system is ready to accept connections
-2023-05-22 08:58:08.273  INFO 3128 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/admin'
-2023-05-22 08:58:09.756  INFO 3128 --- [    Test worker] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 41345
-2023-05-22 08:58:09.781  INFO 3128 --- [    Test worker] e.o.b.c.c.p.p.ClientPactProviderTest     : Started ClientPactProviderTest in 11.834 seconds (JVM running for 16.139)
-2023-05-22 08:58:10.137  INFO 3128 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/msoqloyupavh?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
-2023-05-22 08:58:10.139  INFO 3128 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
-2023-05-22 08:58:10.852  INFO 3128 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client can be restored':SETUP
+2023-05-22 09:17:30.100  INFO 3108 --- [  prefetching-1] &#x1f433; [testcontainers/ryuk:0.3.4]           : Creating container for image: testcontainers/ryuk:0.3.4
+2023-05-22 09:17:30.267  INFO 3108 --- [  prefetching-1] &#x1f433; [testcontainers/ryuk:0.3.4]           : Container testcontainers/ryuk:0.3.4 is starting: 0ebaf43a6a26aa4c59853a6e8a848bfc1898b52f61392f026d80a85bd6e74398
+2023-05-22 09:17:30.756  INFO 3108 --- [  prefetching-1] &#x1f433; [testcontainers/ryuk:0.3.4]           : Container testcontainers/ryuk:0.3.4 started in PT0.686741077S
+2023-05-22 09:17:30.764  INFO 3108 --- [  prefetching-1] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2023-05-22 09:17:30.764  INFO 3108 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : Checking the system...
+2023-05-22 09:17:30.765  INFO 3108 --- [  prefetching-1] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2023-05-22 09:17:30.765  INFO 3108 --- [  prefetching-1] &#x1f433; [postgres:11-alpine]                  : Creating container for image: postgres:11-alpine
+2023-05-22 09:17:30.782  INFO 3108 --- [  prefetching-1] &#x1f433; [postgres:11-alpine]                  : Container postgres:11-alpine is starting: 0c176bb74c0683d6db9cb7d06d0c4b0a2567144d01a304b9395c49b7221ebbb4
+2023-05-22 09:17:32.083  INFO 3108 --- [  prefetching-1] &#x1f433; [postgres:11-alpine]                  : Container postgres:11-alpine started in PT1.317876736S
+2023-05-22 09:17:32.096  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The files belonging to this database system will be owned by user &quot;postgres&quot;.
+2023-05-22 09:17:32.097  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: This user must also own the server process.
+2023-05-22 09:17:32.098  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.101  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The database cluster will be initialized with locale &quot;en_US.utf8&quot;.
+2023-05-22 09:17:32.102  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The default database encoding has accordingly been set to &quot;UTF8&quot;.
+2023-05-22 09:17:32.105  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The default text search configuration will be set to &quot;english&quot;.
+2023-05-22 09:17:32.105  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.106  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: Data page checksums are disabled.
+2023-05-22 09:17:32.106  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.107  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: fixing permissions on existing directory /var/lib/postgresql/data ... ok
+2023-05-22 09:17:32.107  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: creating subdirectories ... ok
+2023-05-22 09:17:32.108  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting default max_connections ... 100
+2023-05-22 09:17:32.109  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting default shared_buffers ... 128MB
+2023-05-22 09:17:32.109  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting default timezone ... UTC
+2023-05-22 09:17:32.110  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: selecting dynamic shared memory implementation ... posix
+2023-05-22 09:17:32.110  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: creating configuration files ... ok
+2023-05-22 09:17:32.111  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: running bootstrap script ... ok
+2023-05-22 09:17:32.111  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: sh: locale: not found
+2023-05-22 09:17:32.111  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 09:17:31.509 UTC [29] WARNING:  no usable system locales were found
+2023-05-22 09:17:32.112  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: performing post-bootstrap initialization ... ok
+2023-05-22 09:17:32.112  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.112  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: Sync to disk skipped.
+2023-05-22 09:17:32.113  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: The data directory might become corrupt if the operating system crashes.
+2023-05-22 09:17:32.113  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 
+2023-05-22 09:17:32.114  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: WARNING: enabling &quot;trust&quot; authentication for local connections
+2023-05-22 09:17:32.116  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: You can change this by editing pg_hba.conf or using the option -A, or
+2023-05-22 09:17:32.117  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: --auth-local and --auth-host, the next time you run initdb.
+2023-05-22 09:17:32.117  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.117  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: Success. You can now start the database server using:
+2023-05-22 09:17:32.117  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.118  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT:     pg_ctl -D /var/lib/postgresql/data -l logfile start
+2023-05-22 09:17:32.120  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.121  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: waiting for server to start....2023-05-22 09:17:31.900 UTC [35] LOG:  listening on Unix socket &quot;/var/run/postgresql/.s.PGSQL.5432&quot;
+2023-05-22 09:17:32.121  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 09:17:31.915 UTC [36] LOG:  database system was shut down at 2023-05-22 09:17:31 UTC
+2023-05-22 09:17:32.121  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 09:17:31.921 UTC [35] LOG:  database system is ready to accept connections
+2023-05-22 09:17:32.121  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT:  done
+2023-05-22 09:17:32.121  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: server started
+2023-05-22 09:17:32.122  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: CREATE DATABASE
+2023-05-22 09:17:32.122  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.122  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.123  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+2023-05-22 09:17:32.123  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.123  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 09:17:32.039 UTC [35] LOG:  received fast shutdown request
+2023-05-22 09:17:32.124  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 09:17:32.040 UTC [35] LOG:  aborting any active transactions
+2023-05-22 09:17:32.125  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 09:17:32.042 UTC [35] LOG:  background worker &quot;logical replication launcher&quot; (PID 42) exited with exit code 1
+2023-05-22 09:17:32.125  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 09:17:32.042 UTC [37] LOG:  shutting down
+2023-05-22 09:17:32.125  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 2023-05-22 09:17:32.046 UTC [35] LOG:  database system is shut down
+2023-05-22 09:17:32.125  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: waiting for server to shut down... done
+2023-05-22 09:17:32.125  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: server stopped
+2023-05-22 09:17:32.126  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.126  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: PostgreSQL init process complete; ready for start up.
+2023-05-22 09:17:32.127  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDOUT: 
+2023-05-22 09:17:32.127  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 09:17:32.056 UTC [1] LOG:  listening on IPv4 address &quot;0.0.0.0&quot;, port 5432
+2023-05-22 09:17:32.127  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 09:17:32.056 UTC [1] LOG:  listening on IPv6 address &quot;::&quot;, port 5432
+2023-05-22 09:17:32.127  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 09:17:32.057 UTC [1] LOG:  listening on Unix socket &quot;/var/run/postgresql/.s.PGSQL.5432&quot;
+2023-05-22 09:17:32.130  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 09:17:32.072 UTC [50] LOG:  database system was shut down at 2023-05-22 09:17:32 UTC
+2023-05-22 09:17:32.130  INFO 3108 --- [tream-663828201] z.t.d.p.p.DockerPostgresDatabaseProvider : STDERR: 2023-05-22 09:17:32.077 UTC [1] LOG:  database system is ready to accept connections
+2023-05-22 09:17:32.494  INFO 3108 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/admin'
+2023-05-22 09:17:33.889  INFO 3108 --- [    Test worker] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 34951
+2023-05-22 09:17:33.915  INFO 3108 --- [    Test worker] e.o.b.c.c.p.p.ClientPactProviderTest     : Started ClientPactProviderTest in 11.724 seconds (JVM running for 16.196)
+2023-05-22 09:17:34.174  INFO 3108 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/qgxeotwiwcaq?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
+2023-05-22 09:17:34.175  INFO 3108 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
+2023-05-22 09:17:34.739  INFO 3108 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client can be restored':SETUP
 
 Verifying a pact between consumerA and clientAPI
   [Using File /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin/build/resources/contractTest/client/cdc/pact/consumerA-clientAPI.json]
@@ -255,14 +255,14 @@ Verifying a pact between consumerA and clientAPI
     returns a response which
       has status code 204 (OK)
       has a matching body (OK)
-2023-05-22 08:58:11.826  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 5 were verified. The following were missing:
-2023-05-22 08:58:11.831  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     replace default client interaction
-2023-05-22 08:58:11.832  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     get default client interaction
-2023-05-22 08:58:11.832  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     remove default client interaction
-2023-05-22 08:58:11.833  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     add default client interaction
-2023-05-22 08:58:11.903  INFO 3128 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/msoqloyupavh?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
-2023-05-22 08:58:11.904  INFO 3128 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
-2023-05-22 08:58:11.912  INFO 3128 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'without risk of duplication on mutation':SETUP
+2023-05-22 09:17:35.609  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 5 were verified. The following were missing:
+2023-05-22 09:17:35.611  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     replace default client interaction
+2023-05-22 09:17:35.613  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     get default client interaction
+2023-05-22 09:17:35.613  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     remove default client interaction
+2023-05-22 09:17:35.613  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     add default client interaction
+2023-05-22 09:17:35.665  INFO 3108 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/qgxeotwiwcaq?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
+2023-05-22 09:17:35.670  INFO 3108 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
+2023-05-22 09:17:35.687  INFO 3108 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'without risk of duplication on mutation':SETUP
 
 Verifying a pact between consumerA and clientAPI
   [Using File /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin/build/resources/contractTest/client/cdc/pact/consumerA-clientAPI.json]
@@ -275,12 +275,12 @@ Verifying a pact between consumerA and clientAPI
     returns a response which
       has status code 204 (OK)
       has a matching body (OK)
-2023-05-22 08:58:12.962  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 5 were verified. The following were missing:
-2023-05-22 08:58:12.962  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     get default client interaction
-2023-05-22 08:58:12.962  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     remove default client interaction
-2023-05-22 08:58:12.963  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     add default client interaction
-2023-05-22 08:58:12.988  INFO 3128 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/msoqloyupavh?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
-2023-05-22 08:58:12.988  INFO 3128 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
+2023-05-22 09:17:36.712  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 5 were verified. The following were missing:
+2023-05-22 09:17:36.712  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     get default client interaction
+2023-05-22 09:17:36.712  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     remove default client interaction
+2023-05-22 09:17:36.712  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     add default client interaction
+2023-05-22 09:17:36.742  INFO 3108 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/qgxeotwiwcaq?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
+2023-05-22 09:17:36.742  INFO 3108 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
 
 Verifying a pact between consumerA and clientAPI
   [Using File /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin/build/resources/contractTest/client/cdc/pact/consumerA-clientAPI.json]
@@ -292,11 +292,11 @@ Verifying a pact between consumerA and clientAPI
     returns a response which
       has status code 200 (OK)
       has a matching body (OK)
-2023-05-22 08:58:13.171  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 5 were verified. The following were missing:
-2023-05-22 08:58:13.172  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     remove default client interaction
-2023-05-22 08:58:13.173  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     add default client interaction
-2023-05-22 08:58:13.201  INFO 3128 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/msoqloyupavh?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
-2023-05-22 08:58:13.202  INFO 3128 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
+2023-05-22 09:17:36.920  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 5 were verified. The following were missing:
+2023-05-22 09:17:36.920  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     remove default client interaction
+2023-05-22 09:17:36.920  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     add default client interaction
+2023-05-22 09:17:36.948  INFO 3108 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/qgxeotwiwcaq?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
+2023-05-22 09:17:36.950  INFO 3108 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
 
 Verifying a pact between consumerA and clientAPI
   [Using File /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin/build/resources/contractTest/client/cdc/pact/consumerA-clientAPI.json]
@@ -308,11 +308,11 @@ Verifying a pact between consumerA and clientAPI
     returns a response which
       has status code 204 (OK)
       has a matching body (OK)
-2023-05-22 08:58:13.356  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 5 were verified. The following were missing:
-2023-05-22 08:58:13.357  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     add default client interaction
-2023-05-22 08:58:13.382  INFO 3128 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/msoqloyupavh?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
-2023-05-22 08:58:13.384  INFO 3128 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'without risk of duplication on addition':SETUP
-2023-05-22 08:58:13.397  INFO 3128 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client id':SETUP
+2023-05-22 09:17:37.096  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 5 were verified. The following were missing:
+2023-05-22 09:17:37.096  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     add default client interaction
+2023-05-22 09:17:37.115  INFO 3108 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/qgxeotwiwcaq?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
+2023-05-22 09:17:37.116  INFO 3108 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'without risk of duplication on addition':SETUP
+2023-05-22 09:17:37.136  INFO 3108 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client id':SETUP
 
 Verifying a pact between consumerA and clientAPI
   [Using File /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin/build/resources/contractTest/client/cdc/pact/consumerA-clientAPI.json]
@@ -325,9 +325,9 @@ Verifying a pact between consumerA and clientAPI
     returns a response which
       has status code 201 (OK)
       has a matching body (OK)
-2023-05-22 08:58:13.637  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Skipping publishing of verification results as it has been disabled (pact.verifier.publishResults is not 'true')
-2023-05-22 08:58:13.668  INFO 3128 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/msoqloyupavh?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
-2023-05-22 08:58:13.672  INFO 3128 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
+2023-05-22 09:17:37.352  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Skipping publishing of verification results as it has been disabled (pact.verifier.publishResults is not 'true')
+2023-05-22 09:17:37.374  INFO 3108 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/qgxeotwiwcaq?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
+2023-05-22 09:17:37.374  INFO 3108 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
 
 Verifying a pact between consumerB and clientAPI
   [Using File /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin/build/resources/contractTest/client/cdc/pact/consumerB-clientAPI.json]
@@ -339,10 +339,10 @@ Verifying a pact between consumerB and clientAPI
     returns a response which
       has status code 200 (OK)
       has a matching body (OK)
-2023-05-22 08:58:13.916  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 2 were verified. The following were missing:
-2023-05-22 08:58:13.916  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     get default client without authentication
-2023-05-22 08:58:13.930  INFO 3128 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/msoqloyupavh?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
-2023-05-22 08:58:13.931  INFO 3128 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
+2023-05-22 09:17:37.515  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 2 were verified. The following were missing:
+2023-05-22 09:17:37.515  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     get default client without authentication
+2023-05-22 09:17:37.537  INFO 3108 --- [    Test worker] i.z.t.d.l.EmbeddedDatabaseReporter       : JDBC URL to connect to 'dataSource': url='jdbc:postgresql://localhost:32773/qgxeotwiwcaq?user=postgres&amp;password=docker', scope='ClientPactProviderTest#verifyPact'
+2023-05-22 09:17:37.537  INFO 3108 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'with default client':SETUP
 
 Verifying a pact between consumerB and clientAPI
   [Using File /home/runner/work/arch-blueprint-kotlin/arch-blueprint-kotlin/build/resources/contractTest/client/cdc/pact/consumerB-clientAPI.json]
@@ -354,7 +354,7 @@ Verifying a pact between consumerB and clientAPI
     returns a response which
       has status code 401 (OK)
       has a matching body (OK)
-2023-05-22 08:58:13.959  WARN 3128 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Skipping publishing of verification results as it has been disabled (pact.verifier.publishResults is not 'true')
+2023-05-22 09:17:37.570  WARN 3108 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Skipping publishing of verification results as it has been disabled (pact.verifier.publishResults is not 'true')
 </pre>
 </span>
 </div>
@@ -366,7 +366,7 @@ Verifying a pact between consumerB and clientAPI
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.0.2</a> at May 22, 2023, 8:58:16 AM</p>
+<a href="http://www.gradle.org">Gradle 8.0.2</a> at May 22, 2023, 9:17:39 AM</p>
 </div>
 </div>
 </body>

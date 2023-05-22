@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.72" tests="41" skipped="0" failures="0" errors="0">
-<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.1" time="0.008">
+<testsuite name="Cucumber" time="0.664" tests="41" skipped="0" failures="0" errors="0">
+<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.1" time="0.006">
 <system-out><![CDATA[
 When mumbling -.............................................................passed
 Then the result of mumbling is -............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.2" time="0.001">
+<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.2" time="0">
 <system-out><![CDATA[
 When mumbling A.............................................................passed
 Then the result of mumbling is A............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.3" time="0.002">
+<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.3" time="0">
 <system-out><![CDATA[
 When mumbling a.............................................................passed
 Then the result of mumbling is A............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.4" time="0.001">
+<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.4" time="0">
 <system-out><![CDATA[
 When mumbling ab............................................................passed
 Then the result of mumbling is A-Bb.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.5" time="0.001">
+<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.5" time="0">
 <system-out><![CDATA[
 When mumbling abc...........................................................passed
 Then the result of mumbling is A-Bb-Ccc.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.6" time="0.001">
+<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.6" time="0">
 <system-out><![CDATA[
 When mumbling abC...........................................................passed
 Then the result of mumbling is A-Bb-Ccc.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.7" time="0.001">
+<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.7" time="0">
 <system-out><![CDATA[
 When mumbling aBCd..........................................................passed
 Then the result of mumbling is A-Bb-Ccc-Dddd................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.8" time="0.001">
+<testcase classname="To mumble the letters of a text" name="Split a given text, repeating the letters, and capitalizing the first occurrence only - Example #1.8" time="0">
 <system-out><![CDATA[
 When mumbling QWERTY........................................................passed
 Then the result of mumbling is Q-Ww-Eee-Rrrr-Ttttt-Yyyyyy...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.1" time="0.013">
+<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.1" time="0.01">
 <system-out><![CDATA[
 When splitting - with an amplitude of 1.....................................passed
 Then the result of splitting is -...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.2" time="0.007">
+<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.2" time="0.004">
 <system-out><![CDATA[
 When splitting a with an amplitude of 1.....................................passed
 Then the result of splitting is a...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.3" time="0.001">
+<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.3" time="0">
 <system-out><![CDATA[
 When splitting ab with an amplitude of 1....................................passed
 Then the result of splitting is a,b.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.4" time="0">
+<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.4" time="0.001">
 <system-out><![CDATA[
 When splitting a with an amplitude of 2.....................................passed
 Then the result of splitting is a_..........................................passed
@@ -78,31 +78,31 @@ When splitting ab with an amplitude of 2....................................pass
 Then the result of splitting is ab..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.6" time="0">
+<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.6" time="0.001">
 <system-out><![CDATA[
 When splitting abc with an amplitude of 2...................................passed
 Then the result of splitting is ab,c_.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.7" time="0">
+<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.7" time="0.001">
 <system-out><![CDATA[
 When splitting abcd with an amplitude of 2..................................passed
 Then the result of splitting is ab,cd.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.8" time="0">
+<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.8" time="0.001">
 <system-out><![CDATA[
 When splitting a with an amplitude of 3.....................................passed
 Then the result of splitting is a__.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.9" time="0">
+<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.9" time="0.001">
 <system-out><![CDATA[
 When splitting ab with an amplitude of 3....................................passed
 Then the result of splitting is ab_.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.10" time="0">
+<testcase classname="To split a text into smaller sections of equal length" name="To split a given text using a comma separator and optional underscore terminators - Example #1.10" time="0.003">
 <system-out><![CDATA[
 When splitting abc with an amplitude of 3...................................passed
 Then the result of splitting is abc.........................................passed
@@ -135,7 +135,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is undefined........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B cannot reach A if A is quicker." time="0">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B cannot reach A if A is quicker." time="0.003">
 <system-out><![CDATA[
 Given a vehicle A with speed of 2 foot per hour.............................passed
 And a vehicle B with speed of 1 foot per hour...............................passed
@@ -144,7 +144,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is undefined........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in one hour if speed difference is one foot and lead is one foot." time="0.003">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in one hour if speed difference is one foot and lead is one foot." time="0.002">
 <system-out><![CDATA[
 Given a vehicle A with speed of 1 foot per hour.............................passed
 And a vehicle B is quicker than A by 1 foot per hour........................passed
@@ -153,7 +153,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 1 hour.s.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that more generally B is able to reach A in g hours if the difference of speed is one foot and lead is g feet. - Example #1.1" time="0.001">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that more generally B is able to reach A in g hours if the difference of speed is one foot and lead is g feet. - Example #1.1" time="0">
 <system-out><![CDATA[
 Given a vehicle A with speed of 1 foot per hour.............................passed
 And a vehicle B is quicker than A by 1 foot per hour........................passed
@@ -171,7 +171,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 2 hour.s.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that more generally B is able to reach A in g hours if the difference of speed is one foot and lead is g feet. - Example #1.3" time="0.001">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that more generally B is able to reach A in g hours if the difference of speed is one foot and lead is g feet. - Example #1.3" time="0.002">
 <system-out><![CDATA[
 Given a vehicle A with speed of 3 foot per hour.............................passed
 And a vehicle B is quicker than A by 1 foot per hour........................passed
@@ -180,7 +180,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 3 hour.s.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in one hour if the lead equals to the difference of speed. - Example #1.1" time="0.001">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in one hour if the lead equals to the difference of speed. - Example #1.1" time="0">
 <system-out><![CDATA[
 Given a vehicle A with speed of 1 foot per hour.............................passed
 And a vehicle B is quicker than A by 1 foot per hour........................passed
@@ -189,7 +189,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 1 hour.s.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in one hour if the lead equals to the difference of speed. - Example #1.2" time="0.001">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in one hour if the lead equals to the difference of speed. - Example #1.2" time="0">
 <system-out><![CDATA[
 Given a vehicle A with speed of 2 foot per hour.............................passed
 And a vehicle B is quicker than A by 2 foot per hour........................passed
@@ -207,7 +207,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 1 hour.s.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k hours if the difference of speed is a divisor of the lead, the factor being k. - Example #1.1" time="0.001">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k hours if the difference of speed is a divisor of the lead, the factor being k. - Example #1.1" time="0.003">
 <system-out><![CDATA[
 Given a vehicle A with speed of 10 foot per hour............................passed
 And a vehicle B is quicker than A by 2 foot per hour........................passed
@@ -216,7 +216,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 5 hour.s.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k hours if the difference of speed is a divisor of the lead, the factor being k. - Example #1.2" time="0.001">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k hours if the difference of speed is a divisor of the lead, the factor being k. - Example #1.2" time="0">
 <system-out><![CDATA[
 Given a vehicle A with speed of 10 foot per hour............................passed
 And a vehicle B is quicker than A by 3 foot per hour........................passed
@@ -225,7 +225,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 7 hour.s.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k hours if the difference of speed is a divisor of the lead, the factor being k. - Example #1.3" time="0.001">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k hours if the difference of speed is a divisor of the lead, the factor being k. - Example #1.3" time="0">
 <system-out><![CDATA[
 Given a vehicle A with speed of 10 foot per hour............................passed
 And a vehicle B is quicker than A by 5 foot per hour........................passed
@@ -234,7 +234,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 6 hour.s.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k minutes if the difference of speed is the product of 60 by a given factor n, and the lead is the product of k by n. - Example #1.1" time="0.001">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k minutes if the difference of speed is the product of 60 by a given factor n, and the lead is the product of k by n. - Example #1.1" time="0.002">
 <system-out><![CDATA[
 Given a vehicle A with speed of 1 foot per hour.............................passed
 And a vehicle B is quicker than A by 60 foot per hour.......................passed
@@ -252,7 +252,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 2 minute.s.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k minutes if the difference of speed is the product of 60 by a given factor n, and the lead is the product of k by n. - Example #1.3" time="0.001">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k minutes if the difference of speed is the product of 60 by a given factor n, and the lead is the product of k by n. - Example #1.3" time="0">
 <system-out><![CDATA[
 Given a vehicle A with speed of 1 foot per hour.............................passed
 And a vehicle B is quicker than A by 180 foot per hour......................passed
@@ -261,7 +261,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 2 minute.s.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k seconds if the difference of speed is the product of 3600 by a given factor n, and the lead is the product of k by n. - Example #1.1" time="0.002">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k seconds if the difference of speed is the product of 3600 by a given factor n, and the lead is the product of k by n. - Example #1.1" time="0.006">
 <system-out><![CDATA[
 Given a vehicle A with speed of 1 foot per hour.............................passed
 And a vehicle B is quicker than A by 3600 foot per hour.....................passed
@@ -270,7 +270,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 1 second.s.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k seconds if the difference of speed is the product of 3600 by a given factor n, and the lead is the product of k by n. - Example #1.2" time="0.002">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k seconds if the difference of speed is the product of 3600 by a given factor n, and the lead is the product of k by n. - Example #1.2" time="0.001">
 <system-out><![CDATA[
 Given a vehicle A with speed of 1 foot per hour.............................passed
 And a vehicle B is quicker than A by 7200 foot per hour.....................passed
@@ -279,7 +279,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 2 second.s.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k seconds if the difference of speed is the product of 3600 by a given factor n, and the lead is the product of k by n. - Example #1.3" time="0.002">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="A next invariant says that B is able to reach A in k seconds if the difference of speed is the product of 3600 by a given factor n, and the lead is the product of k by n. - Example #1.3" time="0.001">
 <system-out><![CDATA[
 Given a vehicle A with speed of 1 foot per hour.............................passed
 And a vehicle B is quicker than A by 10800 foot per hour....................passed
@@ -288,7 +288,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 2 second.s.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="The set of invariants being complete, this last scenario proposes to run specific test samples. - Example #1.1" time="0.002">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="The set of invariants being complete, this last scenario proposes to run specific test samples. - Example #1.1" time="0">
 <system-out><![CDATA[
 Given a vehicle A with speed of 720 foot per hour...........................passed
 And a vehicle B with speed of 850 foot per hour.............................passed
@@ -297,7 +297,7 @@ When calculating the time needed by vehicle B to catch vehicle A............pass
 Then the resulting time is 0 hour.s 32 minute.s 18 second.s.................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="The set of invariants being complete, this last scenario proposes to run specific test samples. - Example #1.2" time="0.001">
+<testcase classname="To calculates the time (hours, minutes, seconds) needed by a car B to catch another car A" name="The set of invariants being complete, this last scenario proposes to run specific test samples. - Example #1.2" time="0">
 <system-out><![CDATA[
 Given a vehicle A with speed of 80 foot per hour............................passed
 And a vehicle B with speed of 91 foot per hour..............................passed

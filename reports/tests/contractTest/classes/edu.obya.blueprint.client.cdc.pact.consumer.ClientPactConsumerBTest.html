@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.248s</div>
+<div class="counter">0.260s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">getClient_whenExists(MockServer)</td>
-<td class="success">0.120s</td>
+<td class="success">0.130s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getClient_whenNoAuth(MockServer)</td>
-<td class="success">0.128s</td>
+<td class="success">0.130s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,11 +92,11 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:57:57.358 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Found @PactTestFor annotation on test method public final void edu.obya.blueprint.client.cdc.pact.consumer.ClientPactConsumerBTest.getClient_whenExists(au.com.dius.pact.consumer.MockServer)
-08:57:57.358 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - providerInfo = ProviderInfo(providerName=, hostInterface=, port=, pactVersion=null, providerType=null, https=false, mockServerImplementation=Default, keyStorePath=, keyStoreAlias=, keyStorePassword=, privateKeyPassword=)
-08:57:57.359 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Looking for @Pact method named 'getClient' for provider 'default'
-08:57:57.359 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Invoking method 'getClient' to get Pact for the test 'getClient_whenExists'
-08:57:57.359 [Test worker] DEBUG io.pact.plugins.jvm.core.CatalogueManager - Core catalogue entries:
+<pre>09:17:21.665 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Found @PactTestFor annotation on test method public final void edu.obya.blueprint.client.cdc.pact.consumer.ClientPactConsumerBTest.getClient_whenExists(au.com.dius.pact.consumer.MockServer)
+09:17:21.666 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - providerInfo = ProviderInfo(providerName=, hostInterface=, port=, pactVersion=null, providerType=null, https=false, mockServerImplementation=Default, keyStorePath=, keyStoreAlias=, keyStorePassword=, privateKeyPassword=)
+09:17:21.667 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Looking for @Pact method named 'getClient' for provider 'default'
+09:17:21.667 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Invoking method 'getClient' to get Pact for the test 'getClient_whenExists'
+09:17:21.667 [Test worker] DEBUG io.pact.plugins.jvm.core.CatalogueManager - Core catalogue entries:
 core/content-matcher/xml
 core/content-matcher/json
 core/content-matcher/text
@@ -131,182 +131,182 @@ core/transport/https
 core/interaction/message
 core/interaction/synchronous-message
 core/content-generator/json
-08:57:57.361 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Starting mock server
-08:57:57.361 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Mock server started: /127.0.0.1:43081
-08:57:57.362 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000011 preparing request execution
-08:57:57.362 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000011 Cookie spec selected: strict
-08:57:57.362 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000011 Auth cache not set in the context
-08:57:57.362 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000011 target auth state: UNCHALLENGED
-08:57:57.362 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000011 proxy auth state: UNCHALLENGED
-08:57:57.362 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000011 acquiring connection with route {}-&gt;http://localhost:43081
-08:57:57.362 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000011 acquiring endpoint (3 MINUTES)
-08:57:57.362 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000005 Get connection for route {}-&gt;http://localhost:43081
-08:57:57.362 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000011 acquired endpoint InternalConnectionEndpoint-1570cad0
-08:57:57.362 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000011 opening connection {}-&gt;http://localhost:43081
-08:57:57.362 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-1570cad0 connecting endpoint (3 MINUTES)
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-6 connecting to localhost/127.0.0.1:43081
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-6 connection established 127.0.0.1:47184&lt;-&gt;127.0.0.1:43081
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-1570cad0 endpoint connected
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000011 executing OPTIONS / HTTP/1.1
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-1570cad0 start execution ex-0000000011
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000005 Executing exchange ex-0000000011
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; OPTIONS / HTTP/1.1
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; X-PACT-BOOTCHECK: true
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; Accept-Encoding: gzip, x-gzip, deflate
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; Host: localhost:43081
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; Connection: keep-alive
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;OPTIONS / HTTP/1.1[\r][\n]&quot;
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;X-PACT-BOOTCHECK: true[\r][\n]&quot;
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;Accept-Encoding: gzip, x-gzip, deflate[\r][\n]&quot;
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;Host: localhost:43081[\r][\n]&quot;
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;Connection: keep-alive[\r][\n]&quot;
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)[\r][\n]&quot;
-08:57:57.363 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;[\r][\n]&quot;
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;Date: Mon, 22 May 2023 08:57:57 GMT[\r][\n]&quot;
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;Transfer-encoding: chunked[\r][\n]&quot;
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;X-pact-bootcheck: true[\r][\n]&quot;
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;[\r][\n]&quot;
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &lt;&lt; HTTP/1.1 200 OK
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &lt;&lt; Date: Mon, 22 May 2023 08:57:57 GMT
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &lt;&lt; Transfer-encoding: chunked
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &lt;&lt; X-pact-bootcheck: true
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000011 connection can be kept alive for 3 MINUTES
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;0[\r][\n]&quot;
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;[\r][\n]&quot;
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-1570cad0 releasing valid endpoint
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000005 Releasing connection 127.0.0.1:47184&lt;-&gt;127.0.0.1:43081
-08:57:57.364 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000005 Connection can be kept alive for 3 MINUTES
-08:57:57.369 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:43081/clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd
-08:57:57.371 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
-08:57:57.371 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
-08:57:57.371 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-08:57:57.371 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://localhost:43081][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-08:57:57.371 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 5][route: {}-&gt;http://localhost:43081][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
-08:57:57.371 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://localhost:43081
-08:57:57.372 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:43081
-08:57:57.372 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:47186&lt;-&gt;127.0.0.1:43081
-08:57:57.372 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1
-08:57:57.372 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-08:57:57.372 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1
-08:57:57.372 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; Authorization: Basic dGVzdDp0ZXN0
-08:57:57.372 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; Accept: application/json, application/*+json
-08:57:57.372 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; Host: localhost:43081
-08:57:57.372 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; Connection: Keep-Alive
-08:57:57.372 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-08:57:57.372 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; Accept-Encoding: gzip,deflate
-08:57:57.372 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1[\r][\n]&quot;
-08:57:57.372 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;Authorization: Basic dGVzdDp0ZXN0[\r][\n]&quot;
-08:57:57.372 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;Accept: application/json, application/*+json[\r][\n]&quot;
-08:57:57.372 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;Host: localhost:43081[\r][\n]&quot;
-08:57:57.372 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
-08:57:57.372 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)[\r][\n]&quot;
-08:57:57.372 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
-08:57:57.372 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;[\r][\n]&quot;
-08:57:57.373 [HTTP-Dispatcher] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Received request: 	method: GET
+09:17:21.670 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Starting mock server
+09:17:21.671 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Mock server started: /127.0.0.1:44231
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000011 preparing request execution
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000011 Cookie spec selected: strict
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000011 Auth cache not set in the context
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000011 target auth state: UNCHALLENGED
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000011 proxy auth state: UNCHALLENGED
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000011 acquiring connection with route {}-&gt;http://localhost:44231
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000011 acquiring endpoint (3 MINUTES)
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000005 Get connection for route {}-&gt;http://localhost:44231
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000011 acquired endpoint InternalConnectionEndpoint-1570cad0
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000011 opening connection {}-&gt;http://localhost:44231
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-1570cad0 connecting endpoint (3 MINUTES)
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-6 connecting to localhost/127.0.0.1:44231
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-6 connection established 127.0.0.1:33544&lt;-&gt;127.0.0.1:44231
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-1570cad0 endpoint connected
+09:17:21.672 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000011 executing OPTIONS / HTTP/1.1
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-1570cad0 start execution ex-0000000011
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000005 Executing exchange ex-0000000011
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; OPTIONS / HTTP/1.1
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; X-PACT-BOOTCHECK: true
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; Accept-Encoding: gzip, x-gzip, deflate
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; Host: localhost:44231
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; Connection: keep-alive
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &gt;&gt; User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;OPTIONS / HTTP/1.1[\r][\n]&quot;
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;X-PACT-BOOTCHECK: true[\r][\n]&quot;
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;Accept-Encoding: gzip, x-gzip, deflate[\r][\n]&quot;
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;Host: localhost:44231[\r][\n]&quot;
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;Connection: keep-alive[\r][\n]&quot;
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)[\r][\n]&quot;
+09:17:21.673 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &gt;&gt; &quot;[\r][\n]&quot;
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;Date: Mon, 22 May 2023 09:17:21 GMT[\r][\n]&quot;
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;Transfer-encoding: chunked[\r][\n]&quot;
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;X-pact-bootcheck: true[\r][\n]&quot;
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;[\r][\n]&quot;
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &lt;&lt; HTTP/1.1 200 OK
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &lt;&lt; Date: Mon, 22 May 2023 09:17:21 GMT
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &lt;&lt; Transfer-encoding: chunked
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-6 &lt;&lt; X-pact-bootcheck: true
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000011 connection can be kept alive for 3 MINUTES
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;0[\r][\n]&quot;
+09:17:21.674 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-6 &lt;&lt; &quot;[\r][\n]&quot;
+09:17:21.675 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-1570cad0 releasing valid endpoint
+09:17:21.675 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000005 Releasing connection 127.0.0.1:33544&lt;-&gt;127.0.0.1:44231
+09:17:21.675 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000005 Connection can be kept alive for 3 MINUTES
+09:17:21.679 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:44231/clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd
+09:17:21.681 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+09:17:21.681 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+09:17:21.681 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+09:17:21.681 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://localhost:44231][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+09:17:21.682 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 5][route: {}-&gt;http://localhost:44231][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+09:17:21.682 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://localhost:44231
+09:17:21.682 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:44231
+09:17:21.682 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:33556&lt;-&gt;127.0.0.1:44231
+09:17:21.682 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1
+09:17:21.683 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+09:17:21.683 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1
+09:17:21.683 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; Authorization: Basic dGVzdDp0ZXN0
+09:17:21.683 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; Accept: application/json, application/*+json
+09:17:21.683 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; Host: localhost:44231
+09:17:21.683 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; Connection: Keep-Alive
+09:17:21.683 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+09:17:21.683 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &gt;&gt; Accept-Encoding: gzip,deflate
+09:17:21.683 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1[\r][\n]&quot;
+09:17:21.683 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;Authorization: Basic dGVzdDp0ZXN0[\r][\n]&quot;
+09:17:21.683 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;Accept: application/json, application/*+json[\r][\n]&quot;
+09:17:21.684 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;Host: localhost:44231[\r][\n]&quot;
+09:17:21.684 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+09:17:21.684 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)[\r][\n]&quot;
+09:17:21.684 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+09:17:21.684 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &gt;&gt; &quot;[\r][\n]&quot;
+09:17:21.684 [HTTP-Dispatcher] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Received request: 	method: GET
 	path: /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd
 	query: {}
-	headers: {Accept-encoding=[gzip,deflate], Accept=[application/json, application/*+json], Connection=[Keep-Alive], Host=[localhost:43081], User-agent=[Apache-HttpClient/4.5.14 (Java/17.0.7)], Authorization=[Basic dGVzdDp0ZXN0]}
+	headers: {Accept-encoding=[gzip,deflate], Accept=[application/json, application/*+json], Connection=[Keep-Alive], Host=[localhost:44231], User-agent=[Apache-HttpClient/4.5.14 (Java/17.0.7)], Authorization=[Basic dGVzdDp0ZXN0]}
 	matchers: MatchingRules(rules={})
 	generators: Generators(categories={})
 	body: EMPTY
-08:57:57.373 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - comparing to expected request: 
+09:17:21.685 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - comparing to expected request: 
 HttpRequest(method=GET, path=/clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd, query={}, headers={Authorization=[Basic dGVzdDp0ZXN0]}, body=MISSING, matchingRules=MatchingRules(rules={path=MatchingRuleCategory(name=path, matchingRules={=MatchingRuleGroup(rules=[RegexMatcher(regex=^/clients/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$, example=null)], ruleLogic=AND, cascaded=false)}), header=MatchingRuleCategory(name=header, matchingRules={Authorization=MatchingRuleGroup(rules=[RegexMatcher(regex=Basic (?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?, example=null)], ruleLogic=AND, cascaded=false)})}), generators=Generators(categories={}))
-08:57:57.373 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - pluginConfiguration={}
-08:57:57.373 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.MatcherExecutor - comparing '/clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd' with regexp ^/clients/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$ at [] -&gt; true
-08:57:57.373 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.HeaderMatcher - Comparing header 'Authorization': 'Basic dGVzdDp0ZXN0' to 'Basic dGVzdDp0ZXN0'
-08:57:57.373 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.MatcherExecutor - comparing 'Basic dGVzdDp0ZXN0' with regexp Basic (?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)? at [Authorization] -&gt; true
-08:57:57.373 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.Matching - matchBody: context=MatchingContext(matchers=MatchingRuleCategory(name=body, matchingRules={}), allowUnexpectedKeys=false, pluginConfiguration={})
-08:57:57.373 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.Matching - No matcher for null, using equality
-08:57:57.373 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - Request mismatch: RequestMatchResult(method=null, path=null, query=[], cookie=null, headers=[HeaderMatchResult(key=Authorization, result=[])], body=BodyMatchResult(typeMismatch=null, bodyResults=[]))
-08:57:57.373 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.generators.DefaultResponseGenerator - Either no content generator was found, or is a core one, will use the internal implementation
-08:57:57.374 [HTTP-Dispatcher] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Generating response: HttpResponse(status=200, headers={Content-Type=[application/json]}, body=PRESENT({&quot;activated&quot;:true,&quot;age&quot;:21,&quot;createdAt&quot;:&quot;2023-05-22T08:57:57&quot;,&quot;id&quot;:&quot;64a0f7d1-7b25-412d-b1e0-abacde3c21cd&quot;,&quot;name&quot;:&quot;John&quot;}), matchingRules=MatchingRules(rules={header=MatchingRuleCategory(name=header, matchingRules={Content-Type=MatchingRuleGroup(rules=[RegexMatcher(regex=application/json, example=null)], ruleLogic=AND, cascaded=false)}), body=MatchingRuleCategory(name=body, matchingRules={$.id=MatchingRuleGroup(rules=[RegexMatcher(regex=[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}, example=null)], ruleLogic=AND, cascaded=false), $.name=MatchingRuleGroup(rules=[au.com.dius.pact.core.model.matchingrules.TypeMatcher@4ca5130b], ruleLogic=AND, cascaded=false), $.age=MatchingRuleGroup(rules=[NumberTypeMatcher(numberType=INTEGER)], ruleLogic=AND, cascaded=false), $.createdAt=MatchingRuleGroup(rules=[TimestampMatcher(format=yyyy-MM-dd'T'HH:mm:ss)], ruleLogic=AND, cascaded=false), $.activated=MatchingRuleGroup(rules=[au.com.dius.pact.core.model.matchingrules.TypeMatcher@4ca5130b], ruleLogic=AND, cascaded=false)}), status=MatchingRuleCategory(name=status, matchingRules={})}), generators=Generators(categories={BODY={$.createdAt=DateTimeGenerator(format=yyyy-MM-dd'T'HH:mm:ss, expression=null)}}))
-08:57:57.374 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
-08:57:57.374 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;Date: Mon, 22 May 2023 08:57:57 GMT[\r][\n]&quot;
-08:57:57.374 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;Content-length: 119[\r][\n]&quot;
-08:57:57.374 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
-08:57:57.374 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;[\r][\n]&quot;
-08:57:57.374 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;{&quot;activated&quot;:true,&quot;age&quot;:21,&quot;createdAt&quot;:&quot;2023-05-22T08:57:57&quot;,&quot;id&quot;:&quot;64a0f7d1-7b25-412d-b1e0-abacde3c21cd&quot;,&quot;name&quot;:&quot;John&quot;}&quot;
-08:57:57.374 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &lt;&lt; HTTP/1.1 200 OK
-08:57:57.374 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &lt;&lt; Date: Mon, 22 May 2023 08:57:57 GMT
-08:57:57.374 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &lt;&lt; Content-length: 119
-08:57:57.374 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &lt;&lt; Content-Type: application/json
-08:57:57.374 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
-08:57:57.375 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
-08:57:57.375 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [edu.obya.blueprint.client.adapter.rest.ClientOutput]
-08:57:57.375 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 5][route: {}-&gt;http://localhost:43081] can be kept alive indefinitely
-08:57:57.375 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-5: set socket timeout to 0
-08:57:57.375 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 5][route: {}-&gt;http://localhost:43081][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
-08:57:57.379 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000012 preparing request execution
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000012 Cookie spec selected: strict
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000012 Auth cache not set in the context
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000012 target auth state: UNCHALLENGED
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000012 proxy auth state: UNCHALLENGED
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000012 acquiring connection with route {s}-&gt;https://www.google-analytics.com:443
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000012 acquiring endpoint (3 MINUTES)
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000012 endpoint lease request (3 MINUTES) [route: {s}-&gt;https://www.google-analytics.com:443][total available: 1; route allocated: 1 of 100; total allocated: 1 of 200]
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000012 endpoint leased [route: {s}-&gt;https://www.google-analytics.com:443][total available: 0; route allocated: 1 of 100; total allocated: 1 of 200]
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000012 acquired ep-0000000006
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000012 acquired endpoint ep-0000000006
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000012 executing POST /collect HTTP/1.1
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000006 start execution ex-0000000012
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000006 executing exchange ex-0000000012 over http-outgoing-1
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; POST /collect HTTP/1.1
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Accept-Encoding: gzip, x-gzip, deflate
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Content-Length: 234
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Host: www.google-analytics.com
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Connection: keep-alive
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;POST /collect HTTP/1.1[\r][\n]&quot;
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept-Encoding: gzip, x-gzip, deflate[\r][\n]&quot;
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Length: 234[\r][\n]&quot;
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]&quot;
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Host: www.google-analytics.com[\r][\n]&quot;
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Connection: keep-alive[\r][\n]&quot;
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)[\r][\n]&quot;
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;[\r][\n]&quot;
-08:57:57.380 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;v=1&amp;t=event&amp;tid=UA-117778936-1&amp;cid=5840efec6f8a7c11901e0f1abf49c738&amp;an=pact-jvm&amp;aid=pact-jvm&amp;av=4.5.5&amp;aip=true&amp;ds=client&amp;cd2=CI&amp;cd3=linux-amd64&amp;cd6=junit5&amp;cd7=17.0.7%2B7-LTS&amp;el=Pact+consumer+tests+ran&amp;ec=ConsumerTest&amp;ea=Completed&amp;ev=1&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Date: Mon, 22 May 2023 08:57:57 GMT[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Pragma: no-cache[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Expires: Fri, 01 Jan 1990 00:00:00 GMT[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Cache-Control: no-cache, no-store, must-revalidate[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Last-Modified: Sun, 17 May 1998 03:00:00 GMT[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Type: image/gif[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Cross-Origin-Resource-Policy: cross-origin[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Server: Golfe2[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Length: 35[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;GIF89a[0x1][0x0][0x1][0x0][0xffffff80][0xffffffff][0x0][0xffffffff][0xffffffff][0xffffffff][0x0][0x0][0x0],[0x0][0x0][0x0][0x0][0x1][0x0][0x1][0x0][0x0][0x2][0x2]D[0x1][0x0];&quot;
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; HTTP/1.1 200 OK
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Access-Control-Allow-Origin: *
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Date: Mon, 22 May 2023 08:57:57 GMT
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Pragma: no-cache
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Expires: Fri, 01 Jan 1990 00:00:00 GMT
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Cache-Control: no-cache, no-store, must-revalidate
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Last-Modified: Sun, 17 May 1998 03:00:00 GMT
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; X-Content-Type-Options: nosniff
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Content-Type: image/gif
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Cross-Origin-Resource-Policy: cross-origin
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Server: Golfe2
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Content-Length: 35
-08:57:57.392 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
-08:57:57.393 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000012 connection can be kept alive for 3 MINUTES
-08:57:57.393 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000006 releasing valid endpoint
-08:57:57.393 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000006 releasing endpoint
-08:57:57.393 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000006 connection http-outgoing-1 can be kept alive for 3 MINUTES
-08:57:57.393 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000006 connection released [route: {s}-&gt;https://www.google-analytics.com:443][total available: 1; route allocated: 1 of 100; total allocated: 1 of 200]
-08:57:57.476 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Mock server shutdown
-08:57:57.482 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Found @PactTestFor annotation on test method public final void edu.obya.blueprint.client.cdc.pact.consumer.ClientPactConsumerBTest.getClient_whenNoAuth(au.com.dius.pact.consumer.MockServer)
-08:57:57.482 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - providerInfo = ProviderInfo(providerName=, hostInterface=, port=, pactVersion=null, providerType=null, https=false, mockServerImplementation=Default, keyStorePath=, keyStoreAlias=, keyStorePassword=, privateKeyPassword=)
-08:57:57.483 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Looking for @Pact method named 'getClient_noAuth' for provider 'default'
-08:57:57.483 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Invoking method 'getClient_noAuth' to get Pact for the test 'getClient_whenNoAuth'
-08:57:57.483 [Test worker] DEBUG io.pact.plugins.jvm.core.CatalogueManager - Core catalogue entries:
+09:17:21.685 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - pluginConfiguration={}
+09:17:21.685 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.MatcherExecutor - comparing '/clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd' with regexp ^/clients/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$ at [] -&gt; true
+09:17:21.686 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.HeaderMatcher - Comparing header 'Authorization': 'Basic dGVzdDp0ZXN0' to 'Basic dGVzdDp0ZXN0'
+09:17:21.686 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.MatcherExecutor - comparing 'Basic dGVzdDp0ZXN0' with regexp Basic (?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)? at [Authorization] -&gt; true
+09:17:21.686 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.Matching - matchBody: context=MatchingContext(matchers=MatchingRuleCategory(name=body, matchingRules={}), allowUnexpectedKeys=false, pluginConfiguration={})
+09:17:21.686 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.Matching - No matcher for null, using equality
+09:17:21.686 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - Request mismatch: RequestMatchResult(method=null, path=null, query=[], cookie=null, headers=[HeaderMatchResult(key=Authorization, result=[])], body=BodyMatchResult(typeMismatch=null, bodyResults=[]))
+09:17:21.686 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.generators.DefaultResponseGenerator - Either no content generator was found, or is a core one, will use the internal implementation
+09:17:21.687 [HTTP-Dispatcher] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Generating response: HttpResponse(status=200, headers={Content-Type=[application/json]}, body=PRESENT({&quot;activated&quot;:true,&quot;age&quot;:21,&quot;createdAt&quot;:&quot;2023-05-22T09:17:21&quot;,&quot;id&quot;:&quot;64a0f7d1-7b25-412d-b1e0-abacde3c21cd&quot;,&quot;name&quot;:&quot;John&quot;}), matchingRules=MatchingRules(rules={header=MatchingRuleCategory(name=header, matchingRules={Content-Type=MatchingRuleGroup(rules=[RegexMatcher(regex=application/json, example=null)], ruleLogic=AND, cascaded=false)}), body=MatchingRuleCategory(name=body, matchingRules={$.id=MatchingRuleGroup(rules=[RegexMatcher(regex=[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}, example=null)], ruleLogic=AND, cascaded=false), $.name=MatchingRuleGroup(rules=[au.com.dius.pact.core.model.matchingrules.TypeMatcher@6d4d9dee], ruleLogic=AND, cascaded=false), $.age=MatchingRuleGroup(rules=[NumberTypeMatcher(numberType=INTEGER)], ruleLogic=AND, cascaded=false), $.createdAt=MatchingRuleGroup(rules=[TimestampMatcher(format=yyyy-MM-dd'T'HH:mm:ss)], ruleLogic=AND, cascaded=false), $.activated=MatchingRuleGroup(rules=[au.com.dius.pact.core.model.matchingrules.TypeMatcher@6d4d9dee], ruleLogic=AND, cascaded=false)}), status=MatchingRuleCategory(name=status, matchingRules={})}), generators=Generators(categories={BODY={$.createdAt=DateTimeGenerator(format=yyyy-MM-dd'T'HH:mm:ss, expression=null)}}))
+09:17:21.688 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+09:17:21.688 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;Date: Mon, 22 May 2023 09:17:21 GMT[\r][\n]&quot;
+09:17:21.688 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;Content-length: 119[\r][\n]&quot;
+09:17:21.688 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+09:17:21.688 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;[\r][\n]&quot;
+09:17:21.688 [Test worker] DEBUG org.apache.http.wire - http-outgoing-5 &lt;&lt; &quot;{&quot;activated&quot;:true,&quot;age&quot;:21,&quot;createdAt&quot;:&quot;2023-05-22T09:17:21&quot;,&quot;id&quot;:&quot;64a0f7d1-7b25-412d-b1e0-abacde3c21cd&quot;,&quot;name&quot;:&quot;John&quot;}&quot;
+09:17:21.688 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &lt;&lt; HTTP/1.1 200 OK
+09:17:21.688 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &lt;&lt; Date: Mon, 22 May 2023 09:17:21 GMT
+09:17:21.688 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &lt;&lt; Content-length: 119
+09:17:21.688 [Test worker] DEBUG org.apache.http.headers - http-outgoing-5 &lt;&lt; Content-Type: application/json
+09:17:21.689 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+09:17:21.689 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+09:17:21.689 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [edu.obya.blueprint.client.adapter.rest.ClientOutput]
+09:17:21.690 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 5][route: {}-&gt;http://localhost:44231] can be kept alive indefinitely
+09:17:21.690 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-5: set socket timeout to 0
+09:17:21.690 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 5][route: {}-&gt;http://localhost:44231][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+09:17:21.697 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000012 preparing request execution
+09:17:21.697 [Thread-14] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000012 Cookie spec selected: strict
+09:17:21.697 [Thread-14] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000012 Auth cache not set in the context
+09:17:21.697 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000012 target auth state: UNCHALLENGED
+09:17:21.697 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000012 proxy auth state: UNCHALLENGED
+09:17:21.697 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000012 acquiring connection with route {s}-&gt;https://www.google-analytics.com:443
+09:17:21.697 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000012 acquiring endpoint (3 MINUTES)
+09:17:21.697 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000012 endpoint lease request (3 MINUTES) [route: {s}-&gt;https://www.google-analytics.com:443][total available: 1; route allocated: 1 of 100; total allocated: 1 of 200]
+09:17:21.697 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000012 endpoint leased [route: {s}-&gt;https://www.google-analytics.com:443][total available: 0; route allocated: 1 of 100; total allocated: 1 of 200]
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000012 acquired ep-0000000006
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000012 acquired endpoint ep-0000000006
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000012 executing POST /collect HTTP/1.1
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000006 start execution ex-0000000012
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000006 executing exchange ex-0000000012 over http-outgoing-1
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; POST /collect HTTP/1.1
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Accept-Encoding: gzip, x-gzip, deflate
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Content-Length: 234
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Host: www.google-analytics.com
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Connection: keep-alive
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;POST /collect HTTP/1.1[\r][\n]&quot;
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept-Encoding: gzip, x-gzip, deflate[\r][\n]&quot;
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Length: 234[\r][\n]&quot;
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]&quot;
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Host: www.google-analytics.com[\r][\n]&quot;
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Connection: keep-alive[\r][\n]&quot;
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)[\r][\n]&quot;
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;[\r][\n]&quot;
+09:17:21.698 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;v=1&amp;t=event&amp;tid=UA-117778936-1&amp;cid=aa7a8634942d6ae694480de4c1b1765c&amp;an=pact-jvm&amp;aid=pact-jvm&amp;av=4.5.5&amp;aip=true&amp;ds=client&amp;cd2=CI&amp;cd3=linux-amd64&amp;cd6=junit5&amp;cd7=17.0.7%2B7-LTS&amp;el=Pact+consumer+tests+ran&amp;ec=ConsumerTest&amp;ea=Completed&amp;ev=1&quot;
+09:17:21.709 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+09:17:21.709 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
+09:17:21.709 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Date: Mon, 22 May 2023 09:17:21 GMT[\r][\n]&quot;
+09:17:21.709 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Pragma: no-cache[\r][\n]&quot;
+09:17:21.709 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Expires: Fri, 01 Jan 1990 00:00:00 GMT[\r][\n]&quot;
+09:17:21.709 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Cache-Control: no-cache, no-store, must-revalidate[\r][\n]&quot;
+09:17:21.709 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Last-Modified: Sun, 17 May 1998 03:00:00 GMT[\r][\n]&quot;
+09:17:21.709 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+09:17:21.710 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Type: image/gif[\r][\n]&quot;
+09:17:21.710 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Cross-Origin-Resource-Policy: cross-origin[\r][\n]&quot;
+09:17:21.710 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Server: Golfe2[\r][\n]&quot;
+09:17:21.710 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Length: 35[\r][\n]&quot;
+09:17:21.710 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000[\r][\n]&quot;
+09:17:21.710 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+09:17:21.710 [Thread-14] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;GIF89a[0x1][0x0][0x1][0x0][0xffffff80][0xffffffff][0x0][0xffffffff][0xffffffff][0xffffffff][0x0][0x0][0x0],[0x0][0x0][0x0][0x0][0x1][0x0][0x1][0x0][0x0][0x2][0x2]D[0x1][0x0];&quot;
+09:17:21.710 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; HTTP/1.1 200 OK
+09:17:21.710 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Access-Control-Allow-Origin: *
+09:17:21.710 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Date: Mon, 22 May 2023 09:17:21 GMT
+09:17:21.710 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Pragma: no-cache
+09:17:21.711 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Expires: Fri, 01 Jan 1990 00:00:00 GMT
+09:17:21.711 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Cache-Control: no-cache, no-store, must-revalidate
+09:17:21.711 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+09:17:21.711 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; X-Content-Type-Options: nosniff
+09:17:21.711 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Content-Type: image/gif
+09:17:21.711 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Cross-Origin-Resource-Policy: cross-origin
+09:17:21.711 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Server: Golfe2
+09:17:21.711 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Content-Length: 35
+09:17:21.711 [Thread-14] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+09:17:21.711 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000012 connection can be kept alive for 3 MINUTES
+09:17:21.712 [Thread-14] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000006 releasing valid endpoint
+09:17:21.712 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000006 releasing endpoint
+09:17:21.712 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000006 connection http-outgoing-1 can be kept alive for 3 MINUTES
+09:17:21.712 [Thread-14] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000006 connection released [route: {s}-&gt;https://www.google-analytics.com:443][total available: 1; route allocated: 1 of 100; total allocated: 1 of 200]
+09:17:21.794 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Mock server shutdown
+09:17:21.800 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Found @PactTestFor annotation on test method public final void edu.obya.blueprint.client.cdc.pact.consumer.ClientPactConsumerBTest.getClient_whenNoAuth(au.com.dius.pact.consumer.MockServer)
+09:17:21.800 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - providerInfo = ProviderInfo(providerName=, hostInterface=, port=, pactVersion=null, providerType=null, https=false, mockServerImplementation=Default, keyStorePath=, keyStoreAlias=, keyStorePassword=, privateKeyPassword=)
+09:17:21.801 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Looking for @Pact method named 'getClient_noAuth' for provider 'default'
+09:17:21.801 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Invoking method 'getClient_noAuth' to get Pact for the test 'getClient_whenNoAuth'
+09:17:21.801 [Test worker] DEBUG io.pact.plugins.jvm.core.CatalogueManager - Core catalogue entries:
 core/content-matcher/xml
 core/content-matcher/json
 core/content-matcher/text
@@ -341,176 +341,176 @@ core/transport/https
 core/interaction/message
 core/interaction/synchronous-message
 core/content-generator/json
-08:57:57.485 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Starting mock server
-08:57:57.485 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Mock server started: /127.0.0.1:37839
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000013 preparing request execution
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000013 Cookie spec selected: strict
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000013 Auth cache not set in the context
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000013 target auth state: UNCHALLENGED
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000013 proxy auth state: UNCHALLENGED
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000013 acquiring connection with route {}-&gt;http://localhost:37839
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000013 acquiring endpoint (3 MINUTES)
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000006 Get connection for route {}-&gt;http://localhost:37839
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000013 acquired endpoint InternalConnectionEndpoint-6f3b13d0
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000013 opening connection {}-&gt;http://localhost:37839
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-6f3b13d0 connecting endpoint (3 MINUTES)
-08:57:57.487 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-7 connecting to localhost/127.0.0.1:37839
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-7 connection established 127.0.0.1:40660&lt;-&gt;127.0.0.1:37839
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-6f3b13d0 endpoint connected
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000013 executing OPTIONS / HTTP/1.1
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-6f3b13d0 start execution ex-0000000013
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000006 Executing exchange ex-0000000013
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; OPTIONS / HTTP/1.1
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; X-PACT-BOOTCHECK: true
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; Accept-Encoding: gzip, x-gzip, deflate
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; Host: localhost:37839
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; Connection: keep-alive
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;OPTIONS / HTTP/1.1[\r][\n]&quot;
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;X-PACT-BOOTCHECK: true[\r][\n]&quot;
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;Accept-Encoding: gzip, x-gzip, deflate[\r][\n]&quot;
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;Host: localhost:37839[\r][\n]&quot;
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;Connection: keep-alive[\r][\n]&quot;
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)[\r][\n]&quot;
-08:57:57.488 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;[\r][\n]&quot;
-08:57:57.489 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
-08:57:57.489 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;Date: Mon, 22 May 2023 08:57:57 GMT[\r][\n]&quot;
-08:57:57.489 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;Transfer-encoding: chunked[\r][\n]&quot;
-08:57:57.489 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;X-pact-bootcheck: true[\r][\n]&quot;
-08:57:57.489 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;[\r][\n]&quot;
-08:57:57.490 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &lt;&lt; HTTP/1.1 200 OK
-08:57:57.490 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &lt;&lt; Date: Mon, 22 May 2023 08:57:57 GMT
-08:57:57.490 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &lt;&lt; Transfer-encoding: chunked
-08:57:57.490 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &lt;&lt; X-pact-bootcheck: true
-08:57:57.490 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000013 connection can be kept alive for 3 MINUTES
-08:57:57.490 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;0[\r][\n]&quot;
-08:57:57.490 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;[\r][\n]&quot;
-08:57:57.490 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-6f3b13d0 releasing valid endpoint
-08:57:57.490 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000006 Releasing connection 127.0.0.1:40660&lt;-&gt;127.0.0.1:37839
-08:57:57.490 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000006 Connection can be kept alive for 3 MINUTES
-08:57:57.496 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:37839/clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd
-08:57:57.498 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
-08:57:57.498 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
-08:57:57.498 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-08:57:57.498 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://localhost:37839][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-08:57:57.498 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 6][route: {}-&gt;http://localhost:37839][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
-08:57:57.498 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://localhost:37839
-08:57:57.499 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:37839
-08:57:57.499 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:40672&lt;-&gt;127.0.0.1:37839
-08:57:57.499 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1
-08:57:57.499 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
-08:57:57.499 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-08:57:57.499 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1
-08:57:57.499 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; Accept: application/json, application/*+json
-08:57:57.499 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; Host: localhost:37839
-08:57:57.499 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; Connection: Keep-Alive
-08:57:57.499 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-08:57:57.499 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; Accept-Encoding: gzip,deflate
-08:57:57.499 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1[\r][\n]&quot;
-08:57:57.499 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;Accept: application/json, application/*+json[\r][\n]&quot;
-08:57:57.499 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;Host: localhost:37839[\r][\n]&quot;
-08:57:57.499 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
-08:57:57.499 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)[\r][\n]&quot;
-08:57:57.499 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
-08:57:57.499 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;[\r][\n]&quot;
-08:57:57.499 [HTTP-Dispatcher] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Received request: 	method: GET
+09:17:21.804 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Starting mock server
+09:17:21.804 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Mock server started: /127.0.0.1:40293
+09:17:21.805 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000013 preparing request execution
+09:17:21.805 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000013 Cookie spec selected: strict
+09:17:21.805 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000013 Auth cache not set in the context
+09:17:21.805 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000013 target auth state: UNCHALLENGED
+09:17:21.805 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000013 proxy auth state: UNCHALLENGED
+09:17:21.805 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000013 acquiring connection with route {}-&gt;http://localhost:40293
+09:17:21.805 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000013 acquiring endpoint (3 MINUTES)
+09:17:21.805 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000006 Get connection for route {}-&gt;http://localhost:40293
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000013 acquired endpoint InternalConnectionEndpoint-6f3b13d0
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000013 opening connection {}-&gt;http://localhost:40293
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-6f3b13d0 connecting endpoint (3 MINUTES)
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-7 connecting to localhost/127.0.0.1:40293
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-7 connection established 127.0.0.1:53112&lt;-&gt;127.0.0.1:40293
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-6f3b13d0 endpoint connected
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000013 executing OPTIONS / HTTP/1.1
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-6f3b13d0 start execution ex-0000000013
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000006 Executing exchange ex-0000000013
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; OPTIONS / HTTP/1.1
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; X-PACT-BOOTCHECK: true
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; Accept-Encoding: gzip, x-gzip, deflate
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; Host: localhost:40293
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; Connection: keep-alive
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &gt;&gt; User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;OPTIONS / HTTP/1.1[\r][\n]&quot;
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;X-PACT-BOOTCHECK: true[\r][\n]&quot;
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;Accept-Encoding: gzip, x-gzip, deflate[\r][\n]&quot;
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;Host: localhost:40293[\r][\n]&quot;
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;Connection: keep-alive[\r][\n]&quot;
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)[\r][\n]&quot;
+09:17:21.806 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &gt;&gt; &quot;[\r][\n]&quot;
+09:17:21.807 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+09:17:21.807 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;Date: Mon, 22 May 2023 09:17:21 GMT[\r][\n]&quot;
+09:17:21.807 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;Transfer-encoding: chunked[\r][\n]&quot;
+09:17:21.807 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;X-pact-bootcheck: true[\r][\n]&quot;
+09:17:21.807 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;[\r][\n]&quot;
+09:17:21.807 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &lt;&lt; HTTP/1.1 200 OK
+09:17:21.807 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &lt;&lt; Date: Mon, 22 May 2023 09:17:21 GMT
+09:17:21.807 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &lt;&lt; Transfer-encoding: chunked
+09:17:21.807 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-7 &lt;&lt; X-pact-bootcheck: true
+09:17:21.807 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000013 connection can be kept alive for 3 MINUTES
+09:17:21.808 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;0[\r][\n]&quot;
+09:17:21.808 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-7 &lt;&lt; &quot;[\r][\n]&quot;
+09:17:21.808 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - InternalConnectionEndpoint-6f3b13d0 releasing valid endpoint
+09:17:21.808 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000006 Releasing connection 127.0.0.1:53112&lt;-&gt;127.0.0.1:40293
+09:17:21.808 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager - ep-0000000006 Connection can be kept alive for 3 MINUTES
+09:17:21.813 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:40293/clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd
+09:17:21.815 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+09:17:21.816 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+09:17:21.816 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+09:17:21.816 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://localhost:40293][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+09:17:21.816 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 6][route: {}-&gt;http://localhost:40293][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+09:17:21.816 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://localhost:40293
+09:17:21.816 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:40293
+09:17:21.817 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:53116&lt;-&gt;127.0.0.1:40293
+09:17:21.817 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1
+09:17:21.817 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+09:17:21.817 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+09:17:21.817 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1
+09:17:21.817 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; Accept: application/json, application/*+json
+09:17:21.817 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; Host: localhost:40293
+09:17:21.817 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; Connection: Keep-Alive
+09:17:21.818 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+09:17:21.818 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &gt;&gt; Accept-Encoding: gzip,deflate
+09:17:21.818 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;GET /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd HTTP/1.1[\r][\n]&quot;
+09:17:21.818 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;Accept: application/json, application/*+json[\r][\n]&quot;
+09:17:21.818 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;Host: localhost:40293[\r][\n]&quot;
+09:17:21.818 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+09:17:21.818 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)[\r][\n]&quot;
+09:17:21.818 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+09:17:21.818 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &gt;&gt; &quot;[\r][\n]&quot;
+09:17:21.819 [HTTP-Dispatcher] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Received request: 	method: GET
 	path: /clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd
 	query: {}
-	headers: {Accept-encoding=[gzip,deflate], Accept=[application/json, application/*+json], Connection=[Keep-Alive], Host=[localhost:37839], User-agent=[Apache-HttpClient/4.5.14 (Java/17.0.7)]}
+	headers: {Accept-encoding=[gzip,deflate], Accept=[application/json, application/*+json], Connection=[Keep-Alive], Host=[localhost:40293], User-agent=[Apache-HttpClient/4.5.14 (Java/17.0.7)]}
 	matchers: MatchingRules(rules={})
 	generators: Generators(categories={})
 	body: EMPTY
-08:57:57.500 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - comparing to expected request: 
+09:17:21.819 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - comparing to expected request: 
 HttpRequest(method=GET, path=/clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd, query={}, headers={}, body=MISSING, matchingRules=MatchingRules(rules={path=MatchingRuleCategory(name=path, matchingRules={=MatchingRuleGroup(rules=[RegexMatcher(regex=^/clients/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$, example=null)], ruleLogic=AND, cascaded=false)})}), generators=Generators(categories={}))
-08:57:57.500 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - pluginConfiguration={}
-08:57:57.500 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.MatcherExecutor - comparing '/clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd' with regexp ^/clients/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$ at [] -&gt; true
-08:57:57.500 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.Matching - matchBody: context=MatchingContext(matchers=MatchingRuleCategory(name=body, matchingRules={}), allowUnexpectedKeys=false, pluginConfiguration={})
-08:57:57.500 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.Matching - No matcher for null, using equality
-08:57:57.500 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - Request mismatch: RequestMatchResult(method=null, path=null, query=[], cookie=null, headers=[], body=BodyMatchResult(typeMismatch=null, bodyResults=[]))
-08:57:57.500 [HTTP-Dispatcher] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Generating response: HttpResponse(status=401, headers={}, body=MISSING, matchingRules=MatchingRules(rules={status=MatchingRuleCategory(name=status, matchingRules={}), header=MatchingRuleCategory(name=header, matchingRules={})}), generators=Generators(categories={}))
-08:57:57.500 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;HTTP/1.1 401 Unauthorized[\r][\n]&quot;
-08:57:57.500 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;Date: Mon, 22 May 2023 08:57:57 GMT[\r][\n]&quot;
-08:57:57.500 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;Transfer-encoding: chunked[\r][\n]&quot;
-08:57:57.500 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;[\r][\n]&quot;
-08:57:57.500 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;0[\r][\n]&quot;
-08:57:57.500 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;[\r][\n]&quot;
-08:57:57.500 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &lt;&lt; HTTP/1.1 401 Unauthorized
-08:57:57.500 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &lt;&lt; Date: Mon, 22 May 2023 08:57:57 GMT
-08:57:57.500 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &lt;&lt; Transfer-encoding: chunked
-08:57:57.502 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
-08:57:57.502 [Test worker] DEBUG org.apache.http.impl.auth.HttpAuthenticator - Authentication required
-08:57:57.502 [Test worker] DEBUG org.apache.http.impl.auth.HttpAuthenticator - localhost:37839 requested authentication
-08:57:57.502 [Test worker] DEBUG org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
-08:57:57.502 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 401 UNAUTHORIZED
-08:57:57.503 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 6][route: {}-&gt;http://localhost:37839] can be kept alive indefinitely
-08:57:57.503 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-6: set socket timeout to 0
-08:57:57.503 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 6][route: {}-&gt;http://localhost:37839][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
-08:57:57.510 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000014 preparing request execution
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000014 Cookie spec selected: strict
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000014 Auth cache not set in the context
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000014 target auth state: UNCHALLENGED
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000014 proxy auth state: UNCHALLENGED
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000014 acquiring connection with route {s}-&gt;https://www.google-analytics.com:443
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000014 acquiring endpoint (3 MINUTES)
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000014 endpoint lease request (3 MINUTES) [route: {s}-&gt;https://www.google-analytics.com:443][total available: 1; route allocated: 1 of 100; total allocated: 1 of 200]
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000014 endpoint leased [route: {s}-&gt;https://www.google-analytics.com:443][total available: 0; route allocated: 1 of 100; total allocated: 1 of 200]
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000014 acquired ep-0000000007
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000014 acquired endpoint ep-0000000007
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000014 executing POST /collect HTTP/1.1
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000007 start execution ex-0000000014
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000007 executing exchange ex-0000000014 over http-outgoing-1
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; POST /collect HTTP/1.1
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Accept-Encoding: gzip, x-gzip, deflate
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Content-Length: 234
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Host: www.google-analytics.com
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Connection: keep-alive
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;POST /collect HTTP/1.1[\r][\n]&quot;
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept-Encoding: gzip, x-gzip, deflate[\r][\n]&quot;
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Length: 234[\r][\n]&quot;
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]&quot;
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Host: www.google-analytics.com[\r][\n]&quot;
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Connection: keep-alive[\r][\n]&quot;
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)[\r][\n]&quot;
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;[\r][\n]&quot;
-08:57:57.511 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;v=1&amp;t=event&amp;tid=UA-117778936-1&amp;cid=5840efec6f8a7c11901e0f1abf49c738&amp;an=pact-jvm&amp;aid=pact-jvm&amp;av=4.5.5&amp;aip=true&amp;ds=client&amp;cd2=CI&amp;cd3=linux-amd64&amp;cd6=junit5&amp;cd7=17.0.7%2B7-LTS&amp;el=Pact+consumer+tests+ran&amp;ec=ConsumerTest&amp;ea=Completed&amp;ev=1&quot;
-08:57:57.522 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
-08:57:57.523 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
-08:57:57.523 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Date: Mon, 22 May 2023 08:57:57 GMT[\r][\n]&quot;
-08:57:57.523 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Pragma: no-cache[\r][\n]&quot;
-08:57:57.523 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Expires: Fri, 01 Jan 1990 00:00:00 GMT[\r][\n]&quot;
-08:57:57.523 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Cache-Control: no-cache, no-store, must-revalidate[\r][\n]&quot;
-08:57:57.523 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Last-Modified: Sun, 17 May 1998 03:00:00 GMT[\r][\n]&quot;
-08:57:57.523 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
-08:57:57.523 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Type: image/gif[\r][\n]&quot;
-08:57:57.523 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Cross-Origin-Resource-Policy: cross-origin[\r][\n]&quot;
-08:57:57.523 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Server: Golfe2[\r][\n]&quot;
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Length: 35[\r][\n]&quot;
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000[\r][\n]&quot;
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;GIF89a[0x1][0x0][0x1][0x0][0xffffff80][0xffffffff][0x0][0xffffffff][0xffffffff][0xffffffff][0x0][0x0][0x0],[0x0][0x0][0x0][0x0][0x1][0x0][0x1][0x0][0x0][0x2][0x2]D[0x1][0x0];&quot;
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; HTTP/1.1 200 OK
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Access-Control-Allow-Origin: *
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Date: Mon, 22 May 2023 08:57:57 GMT
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Pragma: no-cache
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Expires: Fri, 01 Jan 1990 00:00:00 GMT
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Cache-Control: no-cache, no-store, must-revalidate
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Last-Modified: Sun, 17 May 1998 03:00:00 GMT
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; X-Content-Type-Options: nosniff
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Content-Type: image/gif
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Cross-Origin-Resource-Policy: cross-origin
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Server: Golfe2
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Content-Length: 35
-08:57:57.524 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
-08:57:57.525 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000014 connection can be kept alive for 3 MINUTES
-08:57:57.528 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000007 releasing valid endpoint
-08:57:57.528 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000007 releasing endpoint
-08:57:57.529 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000007 connection http-outgoing-1 can be kept alive for 3 MINUTES
-08:57:57.529 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000007 connection released [route: {s}-&gt;https://www.google-analytics.com:443][total available: 1; route allocated: 1 of 100; total allocated: 1 of 200]
-08:57:57.607 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Mock server shutdown
-08:57:57.609 [Test worker] INFO au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Writing pacts out to directory from @PactDirectory annotation
-08:57:57.609 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Writing pact consumerB -&gt; clientAPI to file src/contractTest/resources/client/cdc/pact/consumerB-clientAPI.json
+09:17:21.819 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - pluginConfiguration={}
+09:17:21.819 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.MatcherExecutor - comparing '/clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd' with regexp ^/clients/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$ at [] -&gt; true
+09:17:21.820 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.Matching - matchBody: context=MatchingContext(matchers=MatchingRuleCategory(name=body, matchingRules={}), allowUnexpectedKeys=false, pluginConfiguration={})
+09:17:21.820 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.Matching - No matcher for null, using equality
+09:17:21.820 [HTTP-Dispatcher] DEBUG au.com.dius.pact.core.matchers.RequestMatching - Request mismatch: RequestMatchResult(method=null, path=null, query=[], cookie=null, headers=[], body=BodyMatchResult(typeMismatch=null, bodyResults=[]))
+09:17:21.820 [HTTP-Dispatcher] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Generating response: HttpResponse(status=401, headers={}, body=MISSING, matchingRules=MatchingRules(rules={status=MatchingRuleCategory(name=status, matchingRules={}), header=MatchingRuleCategory(name=header, matchingRules={})}), generators=Generators(categories={}))
+09:17:21.821 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;HTTP/1.1 401 Unauthorized[\r][\n]&quot;
+09:17:21.821 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;Date: Mon, 22 May 2023 09:17:21 GMT[\r][\n]&quot;
+09:17:21.821 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;Transfer-encoding: chunked[\r][\n]&quot;
+09:17:21.821 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;[\r][\n]&quot;
+09:17:21.821 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;0[\r][\n]&quot;
+09:17:21.821 [Test worker] DEBUG org.apache.http.wire - http-outgoing-6 &lt;&lt; &quot;[\r][\n]&quot;
+09:17:21.821 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &lt;&lt; HTTP/1.1 401 Unauthorized
+09:17:21.821 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &lt;&lt; Date: Mon, 22 May 2023 09:17:21 GMT
+09:17:21.821 [Test worker] DEBUG org.apache.http.headers - http-outgoing-6 &lt;&lt; Transfer-encoding: chunked
+09:17:21.823 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+09:17:21.823 [Test worker] DEBUG org.apache.http.impl.auth.HttpAuthenticator - Authentication required
+09:17:21.823 [Test worker] DEBUG org.apache.http.impl.auth.HttpAuthenticator - localhost:40293 requested authentication
+09:17:21.823 [Test worker] DEBUG org.apache.http.impl.auth.HttpAuthenticator - Response contains no authentication challenges
+09:17:21.823 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 401 UNAUTHORIZED
+09:17:21.824 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 6][route: {}-&gt;http://localhost:40293] can be kept alive indefinitely
+09:17:21.824 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-6: set socket timeout to 0
+09:17:21.824 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 6][route: {}-&gt;http://localhost:40293][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000014 preparing request execution
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000014 Cookie spec selected: strict
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000014 Auth cache not set in the context
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000014 target auth state: UNCHALLENGED
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000014 proxy auth state: UNCHALLENGED
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000014 acquiring connection with route {s}-&gt;https://www.google-analytics.com:443
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000014 acquiring endpoint (3 MINUTES)
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000014 endpoint lease request (3 MINUTES) [route: {s}-&gt;https://www.google-analytics.com:443][total available: 1; route allocated: 1 of 100; total allocated: 1 of 200]
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000014 endpoint leased [route: {s}-&gt;https://www.google-analytics.com:443][total available: 0; route allocated: 1 of 100; total allocated: 1 of 200]
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000014 acquired ep-0000000007
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000014 acquired endpoint ep-0000000007
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000014 executing POST /collect HTTP/1.1
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000007 start execution ex-0000000014
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000007 executing exchange ex-0000000014 over http-outgoing-1
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; POST /collect HTTP/1.1
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Accept-Encoding: gzip, x-gzip, deflate
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Content-Length: 234
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Host: www.google-analytics.com
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Connection: keep-alive
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;POST /collect HTTP/1.1[\r][\n]&quot;
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept-Encoding: gzip, x-gzip, deflate[\r][\n]&quot;
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Length: 234[\r][\n]&quot;
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]&quot;
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Host: www.google-analytics.com[\r][\n]&quot;
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Connection: keep-alive[\r][\n]&quot;
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;User-Agent: Apache-HttpClient/5.1.4 (Java/17.0.7)[\r][\n]&quot;
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;[\r][\n]&quot;
+09:17:21.831 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;v=1&amp;t=event&amp;tid=UA-117778936-1&amp;cid=aa7a8634942d6ae694480de4c1b1765c&amp;an=pact-jvm&amp;aid=pact-jvm&amp;av=4.5.5&amp;aip=true&amp;ds=client&amp;cd2=CI&amp;cd3=linux-amd64&amp;cd6=junit5&amp;cd7=17.0.7%2B7-LTS&amp;el=Pact+consumer+tests+ran&amp;ec=ConsumerTest&amp;ea=Completed&amp;ev=1&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Date: Mon, 22 May 2023 09:17:21 GMT[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Pragma: no-cache[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Expires: Fri, 01 Jan 1990 00:00:00 GMT[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Cache-Control: no-cache, no-store, must-revalidate[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Last-Modified: Sun, 17 May 1998 03:00:00 GMT[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Type: image/gif[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Cross-Origin-Resource-Policy: cross-origin[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Server: Golfe2[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Length: 35[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+09:17:21.842 [Thread-16] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;GIF89a[0x1][0x0][0x1][0x0][0xffffff80][0xffffffff][0x0][0xffffffff][0xffffffff][0xffffffff][0x0][0x0][0x0],[0x0][0x0][0x0][0x0][0x1][0x0][0x1][0x0][0x0][0x2][0x2]D[0x1][0x0];&quot;
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; HTTP/1.1 200 OK
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Access-Control-Allow-Origin: *
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Date: Mon, 22 May 2023 09:17:21 GMT
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Pragma: no-cache
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Expires: Fri, 01 Jan 1990 00:00:00 GMT
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Cache-Control: no-cache, no-store, must-revalidate
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; X-Content-Type-Options: nosniff
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Content-Type: image/gif
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Cross-Origin-Resource-Policy: cross-origin
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Server: Golfe2
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Content-Length: 35
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000014 connection can be kept alive for 3 MINUTES
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000007 releasing valid endpoint
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000007 releasing endpoint
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000007 connection http-outgoing-1 can be kept alive for 3 MINUTES
+09:17:21.843 [Thread-16] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000007 connection released [route: {s}-&gt;https://www.google-analytics.com:443][total available: 1; route allocated: 1 of 100; total allocated: 1 of 200]
+09:17:21.927 [Test worker] DEBUG au.com.dius.pact.consumer.BaseJdkMockServer - Mock server shutdown
+09:17:21.929 [Test worker] INFO au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Writing pacts out to directory from @PactDirectory annotation
+09:17:21.930 [Test worker] DEBUG au.com.dius.pact.consumer.junit5.PactConsumerTestExt - Writing pact consumerB -&gt; clientAPI to file src/contractTest/resources/client/cdc/pact/consumerB-clientAPI.json
 </pre>
 </span>
 </div>
@@ -522,7 +522,7 @@ HttpRequest(method=GET, path=/clients/64a0f7d1-7b25-412d-b1e0-abacde3c21cd, quer
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.0.2</a> at May 22, 2023, 8:58:16 AM</p>
+<a href="http://www.gradle.org">Gradle 8.0.2</a> at May 22, 2023, 9:17:39 AM</p>
 </div>
 </div>
 </body>
