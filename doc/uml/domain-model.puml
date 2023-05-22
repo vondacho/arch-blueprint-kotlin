@@ -2,33 +2,31 @@
 
 !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/general/notes.puml
 
-class Customer {
-    CustomerId id
-    CustomerState state
-}
+class Client
 
-Customer *--> "1" CustomerId
-Customer *--> "1" CustomerState
+Client *--> "1" ClientId
+Client *--> "1" ClientState
 
-class CustomerId {
+class ClientId {
     UUID id
-    +parse(String): CustomerId
 }
 
-class CustomerState {
-    String firstName
-    String lastName
+class ClientState {
+    name: String
+    age: Int
+    activated: Boolean
 }
 
-interface CustomerRepository {
-    +Optional<Customer> findById(CustomerId)
-    +Optional<Customer> findByFirstNameAndLastName(firstName, lastName)
-    +List<Customer> findByCriteria(List<FindCriteria>)
-    +void add(CustomerId, CustomerState)
-    +void update(CustomerId, CustomerState)
-    +void remove(CustomerId)
+interface ClientRepository {
+    +save(Client.State): Mono<Client>
+    +save(ClientId, Client.State): Mono<Client>
+    +save(Client): Mono<Client>
+    +findOne(ClientId, activatedOnly: Boolean = true): Mono<Client>
+    +findByName(name: String, strict: Boolean = false, activatedOnly: Boolean = true): Flux<Client>
+    +findAll(activatedOnly: Boolean = true): Flux<Client>
+    +remove(Client): Mono<Client>
 }
 
-CustomerRepository --> "read and writes" Customer
+ClientRepository --> "read and writes" Client
 
 @enduml

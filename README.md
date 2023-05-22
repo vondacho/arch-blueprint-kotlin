@@ -22,9 +22,7 @@ A Kotlin project as template and pedagogical support for the teaching of Clean A
 - Build the project with `./gradlew clean build`.
 - Start the containerized database with `docker-compose up`.
 - Launch the application locally with `gradlew bootRun --args='--spring.profiles.active=local,r2dbc'`
-- Play use cases with Postman using [this default collection](https://vondacho.github.io/arch-blueprint-kotlin/postman/postman_collection.json) or with [Swagger UI](https://vondacho.github.io/arch-blueprint-java/api/).
+- Play use cases with Postman using [this default collection](https://vondacho.github.io/arch-blueprint-kotlin/postman/postman_collection.json) or with [Swagger UI](https://vondacho.github.io/arch-blueprint-kotlin/api/).
 
-## This documentation
-- Powered by [MkDocs](https://www.mkdocs.org/getting-started/)
-- API documentation powered by [Swagger UI](https://swagger.io/tools/swagger-ui/)
-- Architecture documentation powered by [Structurizr](https://structurizr.com/) and [AppMap](https://appmap.io/docs/appmap-overview.html)
+## Documentation
+Find full detailed documentation [here](https://vondacho.github.io/arch-blueprint-kotlin/) powered by [MkDocs](https://www.mkdocs.org/getting-started/)

@@ -34,7 +34,6 @@ Draft new release of the application from GitHub [release panel](https://github.
 
 ## Spring profiles
 
-- `dev` defines credentials and access control for **test** and **admin** users.
+- `local` execution on local Postgres databases on port 5432.
 - `test` defines credentials and access control for **anonymous**, **test** and **admin** users.
-- `jpa` enables persistence with relational database using JPA interface.
-- `postgres` configure datasource to use a local database running on port 5432.
+- `r2dbc` enables persistence with relational database using R2DBC reactive driver.

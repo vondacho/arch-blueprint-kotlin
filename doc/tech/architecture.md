@@ -5,9 +5,6 @@
 - [Container view](https://www.structurizr.com/share/38199/diagrams#blueprint-containers)
 - [Component view](https://www.structurizr.com/share/38199/diagrams#blueprint-api-components)
 
-## AppMap
-No maps available at the moment.
-
 ## Hexagonal
 The logical layers are organized like an onion with the domain layer at the center.
 Infrastructure layer adapts the output ports exposed by the application and domain layers.
