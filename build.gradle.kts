@@ -78,7 +78,7 @@ dependencies {
 
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
-    implementation("org.zalando:problem-spring-webflux:0.27.0")
+    implementation("org.zalando:problem-spring-webflux:0.29.1")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
