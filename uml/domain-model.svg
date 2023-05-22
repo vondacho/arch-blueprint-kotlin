@@ -1,43 +1,41 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="413px" preserveAspectRatio="none" style="width:469px;height:413px;background:#FFFFFF;" version="1.1" viewBox="0 0 469 413" width="469px" zoomAndPan="magnify"><defs><filter height="300%" id="fzb2kbk85pr21" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2ce0c9fb7f55b1e256ab28a8ea6b25ec]
-class Customer--><rect codeLine="4" fill="#FEFECE" filter="url(#fzb2kbk85pr21)" height="73.6094" id="Customer" style="stroke:#A80036;stroke-width:1.5;" width="131" x="165.5" y="192"/><ellipse cx="198.05" cy="208" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M201.0188,213.6406 Q200.4406,213.9375 199.8,214.0781 Q199.1594,214.2344 198.4563,214.2344 Q195.9563,214.2344 194.6281,212.5938 Q193.3156,210.9375 193.3156,207.8125 Q193.3156,204.6875 194.6281,203.0313 Q195.9563,201.375 198.4563,201.375 Q199.1594,201.375 199.8,201.5313 Q200.4563,201.6875 201.0188,201.9844 L201.0188,204.7031 Q200.3938,204.125 199.8,203.8594 Q199.2063,203.5781 198.5813,203.5781 Q197.2375,203.5781 196.55,204.6563 Q195.8625,205.7188 195.8625,207.8125 Q195.8625,209.9063 196.55,210.9844 Q197.2375,212.0469 198.5813,212.0469 Q199.2063,212.0469 199.8,211.7813 Q200.3938,211.5 201.0188,210.9219 L201.0188,213.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="60" x="215.95" y="212.1543">Customer</text><line style="stroke:#A80036;stroke-width:1.5;" x1="166.5" x2="295.5" y1="224" y2="224"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="80" x="171.5" y="238.2104">CustomerId id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="119" x="171.5" y="251.0151">CustomerState state</text><line style="stroke:#A80036;stroke-width:1.5;" x1="166.5" x2="295.5" y1="257.6094" y2="257.6094"/><!--MD5=[052b4b5cf7aa81bb3f0d5ba6d67d7b48]
-class CustomerId--><rect codeLine="12" fill="#FEFECE" filter="url(#fzb2kbk85pr21)" height="73.6094" id="CustomerId" style="stroke:#A80036;stroke-width:1.5;" width="175" x="50.5" y="326"/><ellipse cx="98.25" cy="342" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M101.2188,347.6406 Q100.6406,347.9375 100,348.0781 Q99.3594,348.2344 98.6563,348.2344 Q96.1563,348.2344 94.8281,346.5938 Q93.5156,344.9375 93.5156,341.8125 Q93.5156,338.6875 94.8281,337.0313 Q96.1563,335.375 98.6563,335.375 Q99.3594,335.375 100,335.5313 Q100.6563,335.6875 101.2188,335.9844 L101.2188,338.7031 Q100.5938,338.125 100,337.8594 Q99.4063,337.5781 98.7813,337.5781 Q97.4375,337.5781 96.75,338.6563 Q96.0625,339.7188 96.0625,341.8125 Q96.0625,343.9063 96.75,344.9844 Q97.4375,346.0469 98.7813,346.0469 Q99.4063,346.0469 100,345.7813 Q100.5938,345.5 101.2188,344.9219 L101.2188,347.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="71" x="118.75" y="346.1543">CustomerId</text><line style="stroke:#A80036;stroke-width:1.5;" x1="51.5" x2="224.5" y1="358" y2="358"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="56.5" y="372.2104">UUID id</text><line style="stroke:#A80036;stroke-width:1.5;" x1="51.5" x2="224.5" y1="378.8047" y2="378.8047"/><ellipse cx="61.5" cy="389.8047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="70.5" y="393.0151">parse(String): CustomerId</text><!--MD5=[6476c1cd18361670bc1c0ddef7ea6443]
-class CustomerState--><rect codeLine="17" fill="#FEFECE" filter="url(#fzb2kbk85pr21)" height="73.6094" id="CustomerState" style="stroke:#A80036;stroke-width:1.5;" width="126" x="261" y="326"/><ellipse cx="276" cy="342" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M278.9688,347.6406 Q278.3906,347.9375 277.75,348.0781 Q277.1094,348.2344 276.4063,348.2344 Q273.9063,348.2344 272.5781,346.5938 Q271.2656,344.9375 271.2656,341.8125 Q271.2656,338.6875 272.5781,337.0313 Q273.9063,335.375 276.4063,335.375 Q277.1094,335.375 277.75,335.5313 Q278.4063,335.6875 278.9688,335.9844 L278.9688,338.7031 Q278.3438,338.125 277.75,337.8594 Q277.1563,337.5781 276.5313,337.5781 Q275.1875,337.5781 274.5,338.6563 Q273.8125,339.7188 273.8125,341.8125 Q273.8125,343.9063 274.5,344.9844 Q275.1875,346.0469 276.5313,346.0469 Q277.1563,346.0469 277.75,345.7813 Q278.3438,345.5 278.9688,344.9219 L278.9688,347.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="94" x="290" y="346.1543">CustomerState</text><line style="stroke:#A80036;stroke-width:1.5;" x1="262" x2="386" y1="358" y2="358"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="267" y="372.2104">String firstName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="267" y="385.0151">String lastName</text><line style="stroke:#A80036;stroke-width:1.5;" x1="262" x2="386" y1="391.6094" y2="391.6094"/><!--MD5=[e69d6994dde37a3d0167e5476c791457]
-class CustomerRepository--><rect codeLine="22" fill="#FEFECE" filter="url(#fzb2kbk85pr21)" height="124.8281" id="CustomerRepository" style="stroke:#A80036;stroke-width:1.5;" width="448" x="7" y="7"/><ellipse cx="164.25" cy="23" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M160.1719,18.7656 L160.1719,16.6094 L167.5625,16.6094 L167.5625,18.7656 L165.0938,18.7656 L165.0938,26.8438 L167.5625,26.8438 L167.5625,29 L160.1719,29 L160.1719,26.8438 L162.6406,26.8438 L162.6406,18.7656 L160.1719,18.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="125" x="184.75" y="27.1543">CustomerRepository</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="454" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="454" y1="47" y2="47"/><ellipse cx="18" cy="58" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="244" x="27" y="61.2104">Optional&lt;Customer&gt; findById(CustomerId)</text><ellipse cx="18" cy="70.8047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="422" x="27" y="74.0151">Optional&lt;Customer&gt; findByFirstNameAndLastName(firstName, lastName)</text><ellipse cx="18" cy="83.6094" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="286" x="27" y="86.8198">List&lt;Customer&gt; findByCriteria(List&lt;FindCriteria&gt;)</text><ellipse cx="18" cy="96.4141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="216" x="27" y="99.6245">void add(CustomerId, CustomerState)</text><ellipse cx="18" cy="109.2188" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="234" x="27" y="112.4292">void update(CustomerId, CustomerState)</text><ellipse cx="18" cy="122.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="144" x="27" y="125.2339">void remove(CustomerId)</text><!--MD5=[286061980877f1b699964421b7d5abc6]
-link Customer to CustomerId--><path codeLine="9" d="M198.6802,275.8809 C198.6802,275.8809 179.66,302.87 170.88,315.33 " fill="none" id="Customer-CustomerId" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="163.38,325.97,171.8327,320.9151,166.2591,321.8821,165.2921,316.3085,163.38,325.97" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="166.2591" x2="170.87" y1="321.8821" y2="315.35"/><polygon fill="#A80036" points="205.59,266.07,198.8648,268.6722,198.6802,275.8809,205.4054,273.2787,205.59,266.07" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="159.3219" y="314.8749">1</text><!--MD5=[f372bd80b91f99e24f13f6f3e6a6c506]
-link Customer to CustomerState--><path codeLine="10" d="M263.3198,275.8809 C263.3198,275.8809 282.34,302.87 291.12,315.33 " fill="none" id="Customer-CustomerState" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="298.62,325.97,296.7079,316.3085,295.7409,321.8821,290.1673,320.9151,298.62,325.97" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="295.7409" x2="291.13" y1="321.8821" y2="315.35"/><polygon fill="#A80036" points="256.41,266.07,256.5946,273.2787,263.3198,275.8809,263.1352,268.6722,256.41,266.07" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="285.2031" y="314.8749">1</text><!--MD5=[3ae97d11c2ca570632e7e7ed3510da9a]
-link CustomerRepository to Customer--><path codeLine="31" d="M231,132.3 C231,150.57 231,170.13 231,186.77 " fill="none" id="CustomerRepository-to-Customer" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="231,191.83,235,182.83,231,186.83,227,182.83,231,191.83" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98" x="124.2719" y="180.9867">read and writes</text><!--MD5=[189b60aeaccbd2b7ede93351e2445e2e]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="413px" preserveAspectRatio="none" style="width:591px;height:413px;background:#FFFFFF;" version="1.1" viewBox="0 0 591 413" width="591px" zoomAndPan="magnify"><defs><filter height="300%" id="fw5id0y89n4ly" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ed6624c6556d5e7b1bd23032162d20b7]
+class Client--><rect codeLine="4" fill="#FEFECE" filter="url(#fw5id0y89n4ly)" height="48" id="Client" style="stroke:#A80036;stroke-width:1.5;" width="67" x="258.5" y="205"/><ellipse cx="273.5" cy="221" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M276.4688,226.6406 Q275.8906,226.9375 275.25,227.0781 Q274.6094,227.2344 273.9063,227.2344 Q271.4063,227.2344 270.0781,225.5938 Q268.7656,223.9375 268.7656,220.8125 Q268.7656,217.6875 270.0781,216.0313 Q271.4063,214.375 273.9063,214.375 Q274.6094,214.375 275.25,214.5313 Q275.9063,214.6875 276.4688,214.9844 L276.4688,217.7031 Q275.8438,217.125 275.25,216.8594 Q274.6563,216.5781 274.0313,216.5781 Q272.6875,216.5781 272,217.6563 Q271.3125,218.7188 271.3125,220.8125 Q271.3125,222.9063 272,223.9844 Q272.6875,225.0469 274.0313,225.0469 Q274.6563,225.0469 275.25,224.7813 Q275.8438,224.5 276.4688,223.9219 L276.4688,226.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="35" x="287.5" y="225.1543">Client</text><line style="stroke:#A80036;stroke-width:1.5;" x1="259.5" x2="324.5" y1="237" y2="237"/><line style="stroke:#A80036;stroke-width:1.5;" x1="259.5" x2="324.5" y1="245" y2="245"/><!--MD5=[2830222c4409b8d1c0fc655370a64121]
+class ClientId--><rect codeLine="9" fill="#FEFECE" filter="url(#fw5id0y89n4ly)" height="60.8047" id="ClientId" style="stroke:#A80036;stroke-width:1.5;" width="78" x="187" y="325.5"/><ellipse cx="202" cy="341.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M204.9688,347.1406 Q204.3906,347.4375 203.75,347.5781 Q203.1094,347.7344 202.4063,347.7344 Q199.9063,347.7344 198.5781,346.0938 Q197.2656,344.4375 197.2656,341.3125 Q197.2656,338.1875 198.5781,336.5313 Q199.9063,334.875 202.4063,334.875 Q203.1094,334.875 203.75,335.0313 Q204.4063,335.1875 204.9688,335.4844 L204.9688,338.2031 Q204.3438,337.625 203.75,337.3594 Q203.1563,337.0781 202.5313,337.0781 Q201.1875,337.0781 200.5,338.1563 Q199.8125,339.2188 199.8125,341.3125 Q199.8125,343.4063 200.5,344.4844 Q201.1875,345.5469 202.5313,345.5469 Q203.1563,345.5469 203.75,345.2813 Q204.3438,345 204.9688,344.4219 L204.9688,347.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="46" x="216" y="345.6543">ClientId</text><line style="stroke:#A80036;stroke-width:1.5;" x1="188" x2="264" y1="357.5" y2="357.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="193" y="371.7104">UUID id</text><line style="stroke:#A80036;stroke-width:1.5;" x1="188" x2="264" y1="378.3047" y2="378.3047"/><!--MD5=[adcbc6e3bcff73cad1ae572eb61a42f4]
+class ClientState--><rect codeLine="13" fill="#FEFECE" filter="url(#fw5id0y89n4ly)" height="86.4141" id="ClientState" style="stroke:#A80036;stroke-width:1.5;" width="117" x="300.5" y="313"/><ellipse cx="322.7" cy="329" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M325.6688,334.6406 Q325.0906,334.9375 324.45,335.0781 Q323.8094,335.2344 323.1063,335.2344 Q320.6063,335.2344 319.2781,333.5938 Q317.9656,331.9375 317.9656,328.8125 Q317.9656,325.6875 319.2781,324.0313 Q320.6063,322.375 323.1063,322.375 Q323.8094,322.375 324.45,322.5313 Q325.1063,322.6875 325.6688,322.9844 L325.6688,325.7031 Q325.0438,325.125 324.45,324.8594 Q323.8563,324.5781 323.2313,324.5781 Q321.8875,324.5781 321.2,325.6563 Q320.5125,326.7188 320.5125,328.8125 Q320.5125,330.9063 321.2,331.9844 Q321.8875,333.0469 323.2313,333.0469 Q323.8563,333.0469 324.45,332.7813 Q325.0438,332.5 325.6688,331.9219 L325.6688,334.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="69" x="338.3" y="333.1543">ClientState</text><line style="stroke:#A80036;stroke-width:1.5;" x1="301.5" x2="416.5" y1="345" y2="345"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="306.5" y="359.2104">name: String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="43" x="306.5" y="372.0151">age: Int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="306.5" y="384.8198">activated: Boolean</text><line style="stroke:#A80036;stroke-width:1.5;" x1="301.5" x2="416.5" y1="391.4141" y2="391.4141"/><!--MD5=[50517cd8d76fa284d183a993d38d0bc5]
+class ClientRepository--><rect codeLine="19" fill="#FEFECE" filter="url(#fw5id0y89n4ly)" height="137.6328" id="ClientRepository" style="stroke:#A80036;stroke-width:1.5;" width="570" x="7" y="7"/><ellipse cx="237.25" cy="23" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M233.1719,18.7656 L233.1719,16.6094 L240.5625,16.6094 L240.5625,18.7656 L238.0938,18.7656 L238.0938,26.8438 L240.5625,26.8438 L240.5625,29 L233.1719,29 L233.1719,26.8438 L235.6406,26.8438 L235.6406,18.7656 L233.1719,18.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="101" x="257.75" y="27.1543">ClientRepository</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="576" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="576" y1="47" y2="47"/><ellipse cx="18" cy="58" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="27" y="61.2104">save(Client.State): Mono&lt;Client&gt;</text><ellipse cx="18" cy="70.8047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="239" x="27" y="74.0151">save(ClientId, Client.State): Mono&lt;Client&gt;</text><ellipse cx="18" cy="83.6094" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="27" y="86.8198">save(Client): Mono&lt;Client&gt;</text><ellipse cx="18" cy="96.4141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="360" x="27" y="99.6245">findOne(ClientId, activatedOnly: Boolean = true): Mono&lt;Client&gt;</text><ellipse cx="18" cy="109.2188" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="544" x="27" y="112.4292">findByName(name: String, strict: Boolean = false, activatedOnly: Boolean = true): Flux&lt;Client&gt;</text><ellipse cx="18" cy="122.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="292" x="27" y="125.2339">findAll(activatedOnly: Boolean = true): Flux&lt;Client&gt;</text><ellipse cx="18" cy="134.8281" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="171" x="27" y="138.0386">remove(Client): Mono&lt;Client&gt;</text><!--MD5=[f5414ceff1c8c2532092112745c11305]
+link Client to ClientId--><path codeLine="6" d="M274.132,263.829 C274.132,263.829 256.14,297.92 247.81,313.69 " fill="none" id="Client-ClientId" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="241.69,325.28,249.4292,319.1886,244.0244,320.8584,242.3546,315.4536,241.69,325.28" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="244.0244" x2="247.765" y1="320.8584" y2="313.785"/><polygon fill="#A80036" points="279.74,253.22,273.3997,256.6552,274.132,263.829,280.4723,260.3938,279.74,253.22" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="236.1011" y="314.4979">1</text><!--MD5=[91e1198643303d9b6166885c1531c74a]
+link Client to ClientState--><path codeLine="7" d="M310.1203,263.7958 C310.1203,263.7958 323.65,289.05 330.24,301.35 " fill="none" id="Client-ClientState" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="336.45,312.94,335.7225,303.118,334.0874,308.5334,328.672,306.8983,336.45,312.94" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="334.0874" x2="330.31" y1="308.5334" y2="301.48"/><polygon fill="#A80036" points="304.45,253.22,303.7599,260.398,310.1203,263.7958,310.8104,256.6178,304.45,253.22" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="324.2186" y="301.9265">1</text><!--MD5=[73106bb2de68a497ba0ad235fc010d3c]
+link ClientRepository to Client--><path codeLine="29" d="M292,145.43 C292,164.64 292,184.47 292,199.87 " fill="none" id="ClientRepository-to-Client" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="292,204.92,296,195.92,292,199.92,288,195.92,292,204.92" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98" x="181.4438" y="193.9115">read and writes</text><!--MD5=[119d3c638104072901c63dd74a2b01cf]
 @startuml
 
 !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/general/notes.puml
 
-class Customer {
-    CustomerId id
-    CustomerState state
-}
+class Client
 
-Customer *- -> "1" CustomerId
-Customer *- -> "1" CustomerState
+Client *- -> "1" ClientId
+Client *- -> "1" ClientState
 
-class CustomerId {
+class ClientId {
     UUID id
-    +parse(String): CustomerId
 }
 
-class CustomerState {
-    String firstName
-    String lastName
+class ClientState {
+    name: String
+    age: Int
+    activated: Boolean
 }
 
-interface CustomerRepository {
-    +Optional<Customer> findById(CustomerId)
-    +Optional<Customer> findByFirstNameAndLastName(firstName, lastName)
-    +List<Customer> findByCriteria(List<FindCriteria>)
-    +void add(CustomerId, CustomerState)
-    +void update(CustomerId, CustomerState)
-    +void remove(CustomerId)
+interface ClientRepository {
+    +save(Client.State): Mono<Client>
+    +save(ClientId, Client.State): Mono<Client>
+    +save(Client): Mono<Client>
+    +findOne(ClientId, activatedOnly: Boolean = true): Mono<Client>
+    +findByName(name: String, strict: Boolean = false, activatedOnly: Boolean = true): Flux<Client>
+    +findAll(activatedOnly: Boolean = true): Flux<Client>
+    +remove(Client): Mono<Client>
 }
 
-CustomerRepository - -> "read and writes" Customer
+ClientRepository - -> "read and writes" Client
 
 @enduml
 
@@ -56,34 +54,32 @@ skinparam note {
   FontColor #707070
 }
 
-class Customer {
-    CustomerId id
-    CustomerState state
-}
+class Client
 
-Customer *- -> "1" CustomerId
-Customer *- -> "1" CustomerState
+Client *- -> "1" ClientId
+Client *- -> "1" ClientState
 
-class CustomerId {
+class ClientId {
     UUID id
-    +parse(String): CustomerId
 }
 
-class CustomerState {
-    String firstName
-    String lastName
+class ClientState {
+    name: String
+    age: Int
+    activated: Boolean
 }
 
-interface CustomerRepository {
-    +Optional<Customer> findById(CustomerId)
-    +Optional<Customer> findByFirstNameAndLastName(firstName, lastName)
-    +List<Customer> findByCriteria(List<FindCriteria>)
-    +void add(CustomerId, CustomerState)
-    +void update(CustomerId, CustomerState)
-    +void remove(CustomerId)
+interface ClientRepository {
+    +save(Client.State): Mono<Client>
+    +save(ClientId, Client.State): Mono<Client>
+    +save(Client): Mono<Client>
+    +findOne(ClientId, activatedOnly: Boolean = true): Mono<Client>
+    +findByName(name: String, strict: Boolean = false, activatedOnly: Boolean = true): Flux<Client>
+    +findAll(activatedOnly: Boolean = true): Flux<Client>
+    +remove(Client): Mono<Client>
 }
 
-CustomerRepository - -> "read and writes" Customer
+ClientRepository - -> "read and writes" Client
 
 @enduml
 
