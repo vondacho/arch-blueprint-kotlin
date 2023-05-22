@@ -4,7 +4,7 @@
 A Kotlin project as template and pedagogical support for the teaching of Clean Architecture crafting practice.
 
 ## Features
-CRUD operations on client entities exposed by a REST API, and  examples of problem solving exposed by a Kotlin API.
+CRUD operations on client entities exposed by a REST API, and examples of problem-solving exposed by a Kotlin API.
 
 - Web request validation with [Swagger request validator](https://bitbucket.org/atlassian/swagger-request-validator/src/master/)
 - Web security based on Basic Authentication
