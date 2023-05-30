@@ -8,7 +8,7 @@
   "author": "vondacho",
   "homepage": "https://github.com/vondacho/arch-blueprint-kotlin#readme",
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
+    "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^12.1.4",
     "husky": "^6.0.0"
   },
